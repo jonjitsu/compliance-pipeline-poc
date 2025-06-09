@@ -5,18 +5,17 @@ alwaysApply: true
 ---
 # Eliza Project Structure and Ignore Patterns
 
-This project is a monorepo managed with [lerna.json](mdc:lerna.json) and [turbo.json](mdc:turbo.json). The main code is organized under the `packages/` directory, with sub-packages for the app, CLI, documentation, and plugins.
+This project is a monorepo using ElizaOS v2. ElizaOS projects follow the convention project-NAME and ElizaOS plugins follow the convention plugins-NAME.
 
 For details on agent-centric abstractions and architecture, see [agent-architecture.mdc](mdc:agent-architecture.mdc).
 
 ## Key Directories
 
-- **[packages/app/](mdc:packages/app):** Main application code (frontend, backend, Tauri integration).
-- **[packages/cli/](mdc:packages/cli):** Command-line interface and related scripts.
-- **[packages/autodoc/](mdc:packages/autodoc):** Documentation generation utilities.
-- **[packages/client/](mdc:packages/client):** Client-side code and UI components.
-- **[core/](mdc:core):** Core utilities and shared logic.
+- **@project-compliance/:** Main compliance project code using ElizaOS v2.
+- **@project-compliance/knowledge/:** Main compliance project agentic knowledge sources (.md,.pdf,.txt)
 - **[docs/](mdc:docs):** Project documentation, guides, and blog.
+- **@infrastructure/:** Infrastructure build code.
+- **@.github/workflows/:** CICD workflows.
 
 ## Ignore Patterns
 

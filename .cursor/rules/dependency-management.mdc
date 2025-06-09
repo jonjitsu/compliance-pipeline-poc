@@ -1,7 +1,7 @@
 ---
 description: 
-globs: 
-alwaysApply: true
+globs: **/package.json
+alwaysApply: false
 ---
 # Dependency Management Standards
 
@@ -15,56 +15,6 @@ This project uses **Bun** as the primary package manager and follows strict depe
 - Bun is required for CLI and dependencies as documented in [README.md](mdc:README.md)
 - NPM is supported for compatibility but Bun is preferred for performance
 
-### Installation and Setup
-
-```bash
-# Install Bun (required)
-curl -fsSL https://bun.sh/install | bash
-
-# Install project dependencies
-bun install
-
-# Build and start
-bun run build
-bun start
-```
-
-### Version Requirements
-
-Based on [README.md](mdc:README.md) and [dev-environment.mdc](mdc:dev-environment.mdc):
-
-- **Node.js 18+ (prefer 23+)** - Required runtime environment
-- **Bun** - Primary package manager and runtime
-- **Bats** - Shell test runner (install globally: `bun add -g bats`)
-- **Git** - Required for project/plugin tests and version control
-
-## Monorepo Package Management
-
-### Lerna and Turbo Configuration
-
-- Project uses [lerna.json](mdc:lerna.json) for monorepo workspace management
-- Build orchestration with [turbo.json](mdc:turbo.json) for optimized builds
-- Each package in `packages/` has its own `package.json` with specific dependencies
-
-### Package Structure
-
-```
-packages/
-├── app/              # Main application
-├── cli/              # Command-line interface  
-├── client/           # Client-side code
-├── core/             # Core utilities
-├── docs/             # Documentation
-├── autodoc/          # Documentation generation
-└── plugin-*/         # Various plugins
-```
-
-### Cross-Package Dependencies
-
-- Use workspace dependencies for internal packages
-- Maintain consistent versions across related packages
-- Use `tsconfig.json` path mapping for internal imports
-
 ## Dependency Security and Auditing
 
 ### Security Scanning
@@ -72,21 +22,6 @@ packages/
 - Enable security checks in build processes: `"enableSecurityCheck": true` (see [repomix.config.json](mdc:scripts/repomix.config.json))
 - Regular dependency audits with `bun audit`
 - Monitor for vulnerable dependencies and update promptly
-
-### Excluded Dependencies and Files
-
-Based on [.gitignore](mdc:.gitignore) and project patterns:
-
-```gitignore
-# Always exclude these from version control
-node_modules/
-dist/
-build/
-.eliza/
-.docusaurus/
-tokencache/
-*.tsbuildinfo
-```
 
 ### Docker and Container Dependencies
 
@@ -113,8 +48,6 @@ RUN bun install --production
 ### Build Tools and Bundlers
 
 - **tsup** - TypeScript bundler for packages
-- **Turbo** - Build system orchestrator
-- **Tauri** - Desktop application bundler (for `packages/app`)
 
 ### Testing Dependencies
 
