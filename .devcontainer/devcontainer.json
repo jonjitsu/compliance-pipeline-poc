@@ -29,6 +29,7 @@
         "GregorBiswanger.json2ts",
         "yoavbls.pretty-ts-errors",
         "pmneo.tsimporter",
+        "GitHub.vscode-github-actions"
       ]
     }
   }
