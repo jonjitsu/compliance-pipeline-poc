@@ -1,0 +1,36 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Development Environment Standards
+
+## Shell and Terminal
+
+- **Windows users must use WSL2 (Bash) for all development, scripting, and CLI operations.**
+  - PowerShell is not supported for project scripts.
+  - All scripts and commands should be run in a Bash shell within WSL2 for compatibility.
+
+## Script Compatibility
+
+- **All project scripts must be POSIX shell (Bash) compatible.**
+  - If a script is not cross-platform, document it and provide a Bash version.
+  - Avoid writing scripts that require PowerShell or Windows CMD.
+
+## Tooling and Dependencies
+
+- **Node.js 18+ (prefer 23+), bun, and bats are required.**
+  - Install dependencies and run scripts using bun or npm as specified in the README.
+  - Ensure your environment matches the versions and tools described in the project documentation.
+
+## CI/CD Environment
+
+- **All CI/CD scripts and workflows run in a Linux (Ubuntu) environment using Bash.**
+  - Scripts must be compatible with this environment.
+  - Test your scripts in a Linux/Bash shell before committing.
+
+## Additional Notes
+
+- Refer to the README for up-to-date instructions on setting up your development environment.
+- If you encounter environment-specific issues, document them and notify the team.
+

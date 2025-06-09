@@ -1,0 +1,210 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Security Standards
+
+This project handles sensitive data including API keys, tokens, and cryptographic secrets. All developers must follow these security standards.
+
+## Environment Variables and Secrets Management
+
+### Environment Variable Patterns
+
+- **All secrets must be loaded from environment variables**, never hardcode in source
+- Use descriptive environment variable names ending in `_API_KEY`, `_TOKEN`, `_SECRET`, or `_PASSWORD`
+- Always check for missing environment variables and fail gracefully:
+
+```typescript
+const apiKey = process.env.ANTHROPIC_API_KEY;
+if (!apiKey) {
+  console.error('Error: ANTHROPIC_API_KEY environment variable is not set');
+  process.exit(1);
+}
+```
+
+### Secrets File Management
+
+- **Never commit secrets files** - ensure `characters/**/secrets.json` and `characters/**/private/` are in [.gitignore](mdc:.gitignore)
+- Use `secrets.json` files for character-specific configuration when environment variables aren't sufficient
+- Store all API keys, tokens, and sensitive configuration in character `settings.secrets` object
+
+### Required Environment Variables
+
+Based on the codebase, these environment variables are commonly used:
+
+- `OPENAI_API_KEY` - OpenAI API access
+- `ANTHROPIC_API_KEY` - Anthropic Claude API access  
+- `DISCORD_API_TOKEN` - Discord bot token
+- `ELEVENLABS_API_KEY` - ElevenLabs voice API
+- `BIRDEYE_API_KEY` - Birdeye data API
+- `WALLET_SECRET_SALT` - Cryptographic salt for wallet operations
+- `POSTGRES_PASSWORD` - Database password
+- `REDPILL_API_KEY` - RedPill API access
+
+## Cryptographic Security
+
+### Salt and Key Management
+
+- **Always use proper salts for cryptographic operations**
+- Use the `getSalt()` utility function for consistent salt generation
+- Implement proper encryption/decryption with `encryptStringValue()` and `decryptStringValue()`
+- Use `saltSettingValue()` and `unsaltSettingValue()` for secure setting storage
+
+### Password and Token Handling
+
+- **Never log or expose secrets in plain text**
+- Use secure random generation for tokens and salts
+- Implement proper validation for API keys and tokens before use
+- Store encrypted versions of sensitive data when persistence is required
+
+## TEE (Trusted Execution Environment) Security
+
+### Hardware Security Module Integration
+
+- Use TEE modes (`TEE_MODE`, `TEE_VENDOR`) for hardware-backed security
+- Generate cryptographic keys within TEE when available
+- Protect application secrets using SGX or TDX based on requirements
+- Implement hardware root of trust for key generation
+
+### Secure Configuration
+
+```typescript
+// Example secure TEE configuration
+const config = z.object({
+  WALLET_SECRET_SALT: z
+    .string()
+    .min(1, 'Wallet secret salt is not provided')
+    .optional()
+});
+```
+
+## API Security
+
+### Authentication and Authorization
+
+- **Validate all API keys before making requests**
+- Implement proper error handling for authentication failures
+- Use secure headers for API communication:
+
+```typescript
+headers: {
+  'x-api-key': apiKey,
+  'anthropic-version': '2023-06-01',
+  'content-type': 'application/json'
+}
+```
+
+### Rate Limiting and Security Headers
+
+- Implement appropriate rate limiting for external API calls
+- Use secure communication protocols (HTTPS/TLS)
+- Validate and sanitize all external API responses
+
+## File System Security
+
+### Secure File Operations
+
+- **Never include sensitive files in builds** - exclude `node_modules`, `dist`, `.env*` files
+- Use proper file permissions for configuration files
+- Implement secure file upload validation when handling user content
+- Store sensitive data outside of publicly accessible directories
+
+### Build and Deployment Security
+
+- Ensure `.env` files are excluded from version control
+- Use `tokencache/` for temporary token storage (excluded from git)
+- Implement proper CI/CD secret management for GitHub Actions
+
+## Docker and Container Security
+
+### Environment Variable Injection
+
+```yaml
+# Secure environment variable injection in Docker
+environment:
+  - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+  - OPENAI_API_KEY=${OPENAI_API_KEY}
+  - WALLET_SECRET_SALT=${WALLET_SECRET_SALT}
+```
+
+### Container Isolation
+
+- Use proper container isolation for sensitive operations
+- Implement network security controls in container configurations
+- Store container secrets using secure secret management systems
+
+## GitHub Actions and CI/CD Security
+
+### Secrets Management in CI/CD
+
+Required GitHub secrets for secure deployment:
+
+**Android Signing:**
+- `ANDROID_KEYSTORE_BASE64` - Base64 encoded keystore
+- `ANDROID_KEYSTORE_ALIAS` - Keystore alias
+- `ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD` - Private key password
+- `ANDROID_KEYSTORE_PASSWORD` - Keystore password
+
+**iOS Signing:**
+- `APPLE_DEVELOPMENT_CERTIFICATE_P12_BASE64` - Apple certificate
+- `APPLE_CERTIFICATE_PASSWORD` - Certificate password
+- `APPLE_PROVISIONING_PROFILE_BASE64` - Provisioning profile
+- `APPLE_DEVELOPMENT_TEAM` - Apple Developer Team ID
+
+### Secure Build Processes
+
+- Never expose secrets in build logs
+- Use secure artifact signing for releases
+- Implement proper code signing for mobile applications
+- Validate all dependencies and build artifacts
+
+## Code Security Best Practices
+
+### Input Validation and Sanitization
+
+- **Validate all user inputs and external data**
+- Use Zod schemas for runtime validation of sensitive configuration
+- Implement proper error handling that doesn't leak sensitive information
+- Sanitize all data before logging or displaying
+
+### Security Headers and Network
+
+- Implement Content Security Policy (CSP) for web applications
+- Use secure communication protocols for all external connections
+- Validate SSL/TLS certificates for API connections
+- Implement proper CORS configuration
+
+### Memory and Data Protection
+
+- Clear sensitive data from memory when no longer needed
+- Use secure random number generation for cryptographic operations
+- Implement proper data encryption for persistent storage
+- Use memory encryption in TEE environments when available
+
+## Security Testing and Auditing
+
+### Security Testing Requirements
+
+- Test authentication and authorization paths
+- Validate proper secret handling in test environments
+- Test error conditions that might leak sensitive information
+- Implement security regression testing
+
+### Regular Security Audits
+
+- Enable security checks in build processes (`"enableSecurityCheck": true`)
+- Regular dependency security audits
+- Monitor for exposed secrets in code and logs
+- Review and update security configurations regularly
+
+## Incident Response
+
+### Security Incident Handling
+
+- **Immediately revoke compromised API keys or tokens**
+- Update affected secrets in all environments
+- Review access logs for potential data exposure
+- Document security incidents and remediation steps
+
+For examples of secure implementations, see [character.ts](mdc:packages/project-tee-starter/src/character.ts) and [plugin.ts](mdc:packages/project-tee-starter/src/plugin.ts).

@@ -1,0 +1,53 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Eliza Project Structure and Ignore Patterns
+
+This project is a monorepo managed with [lerna.json](mdc:lerna.json) and [turbo.json](mdc:turbo.json). The main code is organized under the `packages/` directory, with sub-packages for the app, CLI, documentation, and plugins.
+
+For details on agent-centric abstractions and architecture, see [agent-architecture.mdc](mdc:agent-architecture.mdc).
+
+## Key Directories
+
+- **[packages/app/](mdc:packages/app):** Main application code (frontend, backend, Tauri integration).
+- **[packages/cli/](mdc:packages/cli):** Command-line interface and related scripts.
+- **[packages/autodoc/](mdc:packages/autodoc):** Documentation generation utilities.
+- **[packages/client/](mdc:packages/client):** Client-side code and UI components.
+- **[core/](mdc:core):** Core utilities and shared logic.
+- **[docs/](mdc:docs):** Project documentation, guides, and blog.
+
+## Ignore Patterns
+
+The project uses a comprehensive [.gitignore](mdc:.gitignore) to exclude:
+
+- Build outputs: `dist/`, `out/`, `coverage`, `test-results/`
+- Environment files: `.env*`
+- Dependency folders: `node_modules/`, `.eliza/`, `.docusaurus/`
+- Temporary and cache files: `tmp/`, `temp/`, `cache/`, `logs/`
+- Editor and OS files: `.idea/`, `.DS_Store`, `.zed/`
+- Test artifacts: `screenshots/`, `playwright-report/`, `test-report*.json`
+- Large/binary/model files: `*.onnx`, `*.gguf`, `*.wav`, `*.mp3`, `*.zip`, `*.tar.gz`, etc.
+
+## Naming and Typing Conventions
+
+- **TypeScript** is used throughout, with strong typing and Zod schemas for validation.
+- **Naming:**  
+  - Classes: PascalCase  
+  - Variables/functions: camelCase  
+  - Files: kebab-case  
+  - Constants: UPPERCASE
+- **Documentation:**  
+  - All code should be documented with TypeDoc-compatible JSDoc comments.
+  - Follow Google's Technical Writing Style Guide for all documentation.
+
+## Referencing Files in Rules
+
+When referencing files in rules, use the format `[filename.ext](mdc:filename.ext)`. For example, to reference the ignore file:  
+`[.gitignore](mdc:.gitignore)`
+
+---
+
+For more details on ignore patterns, see [.gitignore](mdc:.gitignore).
+

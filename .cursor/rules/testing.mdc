@@ -1,0 +1,134 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Testing Standards
+
+This project uses **Vitest** for all testing. All test files must follow these established patterns and conventions.
+
+## Testing Framework and Setup
+
+- **Use Vitest exclusively** - import from `vitest`, not Jest
+- Test files must use `.test.ts` extension and be located in `__tests__/` directories
+- Import testing utilities: `import { describe, expect, it, vi, beforeEach, beforeAll, afterEach, afterAll } from 'vitest'`
+
+## Mock and Spy Standards
+
+- **Use `vi.fn()` for mock functions**, not `jest.fn()`
+- **Use `vi.mocked()` for type-safe mock assertions**
+- **Use `vi.spyOn()` for spying on existing methods**
+- **Use `vi.clearAllMocks()` in `beforeEach` to reset state**
+- **Use `vi.hoisted()` for module-level mocks that need to be hoisted**
+
+## Test Structure and Organization
+
+- **Group related tests with `describe()` blocks**
+- **Use descriptive test names with `it()` or `test()`**
+- **Use `beforeEach()` for test setup, `afterEach()` for cleanup**
+- **Use `beforeAll()` and `afterAll()` for expensive setup/teardown**
+
+## Test Patterns and Best Practices
+
+### Database and Runtime Mocking
+
+- Create comprehensive mock adapters that implement all required interfaces
+- Use helper functions like `createMockMemory()`, `createMockState()`, `createMockAction()`
+- Mock database operations consistently across tests
+- Use proper UUID generation in test data
+
+### Async Testing
+
+- Use `async/await` for all async operations in tests
+- Test both success and error conditions for async functions
+- Mock async dependencies appropriately
+
+### Type Safety
+
+- Use proper TypeScript types in test mocks and data
+- Cast test UUIDs using `stringToUuid()` utility
+- Ensure mock objects match expected interface contracts
+
+### Error Testing
+
+- Test error conditions using `expect().toThrow()`
+- Test invalid inputs and edge cases
+- Verify error messages and types when relevant
+
+### State and Provider Testing
+
+- Mock providers with realistic `get()` method implementations
+- Test state composition with multiple providers
+- Verify provider filtering and caching behavior
+
+### Action Testing
+
+- Mock action handlers with `vi.fn()` that return appropriate values
+- Test action registration and execution
+- Verify correct parameters are passed to action handlers
+- Test action validation logic
+
+## Example Test Structure
+
+```typescript
+import { describe, expect, it, vi, beforeEach } from 'vitest';
+import type { UUID } from '../src/types';
+
+describe('Component Name', () => {
+  let mockRuntime: any;
+  let testData: any;
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    mockRuntime = createMockRuntime();
+    testData = createTestData();
+  });
+
+  describe('specific functionality', () => {
+    it('should handle expected behavior', async () => {
+      // Arrange
+      const input = createTestInput();
+      
+      // Act
+      const result = await functionUnderTest(input);
+      
+      // Assert
+      expect(result).toBeDefined();
+      expect(mockRuntime.someMethod).toHaveBeenCalledWith(expectedArgs);
+    });
+
+    it('should handle error conditions', async () => {
+      // Arrange
+      mockRuntime.someMethod.mockRejectedValue(new Error('Test error'));
+      
+      // Act & Assert
+      await expect(functionUnderTest(invalidInput)).rejects.toThrow('Test error');
+    });
+  });
+});
+```
+
+## Coverage and Quality
+
+- Test both positive and negative cases
+- Include edge cases and boundary conditions
+- Test error handling and validation
+- Verify side effects and state changes
+- Test async behavior and race conditions
+
+## Integration Testing
+
+- Test plugin initialization and registration
+- Test runtime integration with real-like mock data
+- Test file system operations (when applicable)
+- Use proper CI environment detection for environment-specific tests
+
+## Test Data and Helpers
+
+- Create reusable test data factories
+- Use consistent UUID formats in test data
+- Create mock implementations that match real interfaces
+- Use descriptive variable names in test setup
+
+For complete examples, see the existing test files in `packages/core/__tests__/` and other `__tests__/` directories.
+

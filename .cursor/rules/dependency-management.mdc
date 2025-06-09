@@ -1,0 +1,263 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Dependency Management Standards
+
+This project uses **Bun** as the primary package manager and follows strict dependency management practices for security, performance, and maintainability.
+
+## Package Manager Standards
+
+### Primary Package Manager: Bun
+
+- **Use Bun for all package management operations** - installation, scripts, and development
+- Bun is required for CLI and dependencies as documented in [README.md](mdc:README.md)
+- NPM is supported for compatibility but Bun is preferred for performance
+
+### Installation and Setup
+
+```bash
+# Install Bun (required)
+curl -fsSL https://bun.sh/install | bash
+
+# Install project dependencies
+bun install
+
+# Build and start
+bun run build
+bun start
+```
+
+### Version Requirements
+
+Based on [README.md](mdc:README.md) and [dev-environment.mdc](mdc:dev-environment.mdc):
+
+- **Node.js 18+ (prefer 23+)** - Required runtime environment
+- **Bun** - Primary package manager and runtime
+- **Bats** - Shell test runner (install globally: `bun add -g bats`)
+- **Git** - Required for project/plugin tests and version control
+
+## Monorepo Package Management
+
+### Lerna and Turbo Configuration
+
+- Project uses [lerna.json](mdc:lerna.json) for monorepo workspace management
+- Build orchestration with [turbo.json](mdc:turbo.json) for optimized builds
+- Each package in `packages/` has its own `package.json` with specific dependencies
+
+### Package Structure
+
+```
+packages/
+├── app/              # Main application
+├── cli/              # Command-line interface  
+├── client/           # Client-side code
+├── core/             # Core utilities
+├── docs/             # Documentation
+├── autodoc/          # Documentation generation
+└── plugin-*/         # Various plugins
+```
+
+### Cross-Package Dependencies
+
+- Use workspace dependencies for internal packages
+- Maintain consistent versions across related packages
+- Use `tsconfig.json` path mapping for internal imports
+
+## Dependency Security and Auditing
+
+### Security Scanning
+
+- Enable security checks in build processes: `"enableSecurityCheck": true` (see [repomix.config.json](mdc:scripts/repomix.config.json))
+- Regular dependency audits with `bun audit`
+- Monitor for vulnerable dependencies and update promptly
+
+### Excluded Dependencies and Files
+
+Based on [.gitignore](mdc:.gitignore) and project patterns:
+
+```gitignore
+# Always exclude these from version control
+node_modules/
+dist/
+build/
+.eliza/
+.docusaurus/
+tokencache/
+*.tsbuildinfo
+```
+
+### Docker and Container Dependencies
+
+- Use multi-stage builds to minimize production image size
+- Copy only necessary files in Docker builds
+- Exclude development dependencies in production containers
+
+```dockerfile
+# Example pattern from docker configurations
+COPY package.json bun.lockb ./
+RUN bun install --production
+```
+
+## Development Dependencies
+
+### Required Development Tools
+
+- **TypeScript** - Primary development language
+- **Vitest** - Testing framework (see [testing.mdc](mdc:testing.mdc))
+- **Prettier** - Code formatting
+- **ESLint** - Code linting
+- **Husky** - Git hooks management
+
+### Build Tools and Bundlers
+
+- **tsup** - TypeScript bundler for packages
+- **Turbo** - Build system orchestrator
+- **Tauri** - Desktop application bundler (for `packages/app`)
+
+### Testing Dependencies
+
+```json
+{
+  "devDependencies": {
+    "vitest": "latest",
+    "@types/node": "latest",
+    "typescript": "latest"
+  }
+}
+```
+
+## Runtime Dependencies
+
+### Core Runtime Libraries
+
+- **Lodash** - Utility functions (optimize for performance with large datasets)
+- **Zod** - Runtime validation schemas
+- **UUID** - Unique identifier generation
+
+### API and External Service Dependencies
+
+Common external service integrations:
+
+- OpenAI SDK for AI/ML operations
+- Anthropic SDK for Claude API
+- Discord.js for Discord integration
+- PostgreSQL drivers for database operations
+- Various crypto and blockchain libraries
+
+## Version Management and Updates
+
+### Version Pinning Strategy
+
+- Pin exact versions for security-critical dependencies
+- Use semver ranges cautiously for development dependencies
+- Test all version updates in development before production deployment
+
+### Update Process
+
+1. **Security Updates**: Apply immediately after testing
+2. **Minor Updates**: Monthly update cycle with full test suite
+3. **Major Updates**: Quarterly review with migration planning
+4. **Breaking Changes**: Plan migration path and document changes
+
+### Lockfile Management
+
+- **Always commit `bun.lockb`** for reproducible builds
+- Update lockfile when adding/removing dependencies
+- Use `bun install --frozen-lockfile` in CI/CD environments
+
+## Build and Distribution
+
+### Package Bundling
+
+- Use `tsup.config.ts` for TypeScript package bundling
+- Configure appropriate entry points and outputs
+- Minimize bundle size while maintaining functionality
+
+### Build Scripts
+
+Standard package.json scripts pattern:
+
+```json
+{
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  }
+}
+```
+
+### Distribution and Publishing
+
+- Build all packages before publishing
+- Use semantic versioning for releases
+- Generate proper TypeScript declarations for published packages
+- Include only necessary files in published packages
+
+## Environment-Specific Dependencies
+
+### Development Environment
+
+- Full development toolchain including testing, linting, formatting
+- Debug utilities and development servers
+- Hot reload and watch mode dependencies
+
+### Production Environment
+
+- Minimal runtime dependencies only
+- Optimized builds without development tools
+- Security-focused dependency selection
+
+### CI/CD Environment
+
+- Testing frameworks and coverage tools
+- Build tools and bundlers
+- Deployment and release management tools
+
+## Dependency Troubleshooting
+
+### Common Issues and Solutions
+
+1. **Node Version Conflicts**: Use Node.js 18+ as specified in requirements
+2. **Bun vs NPM**: Prefer Bun for consistency with project standards
+3. **Module Resolution**: Use proper TypeScript path mapping for monorepo
+4. **Build Failures**: Ensure all peer dependencies are satisfied
+
+### Cache Management
+
+```bash
+# Clear Bun cache if needed
+bun install --force
+
+# Clear Node modules and reinstall
+rm -rf node_modules bun.lockb
+bun install
+```
+
+### Performance Optimization
+
+- Use `Promise.all()` for parallel async operations as mentioned in [typescript.mdc](mdc:typescript.mdc)
+- Optimize bundle size with tree shaking
+- Use dynamic imports for code splitting when appropriate
+- Monitor dependency bundle impact on application performance
+
+## Compliance and Licensing
+
+### License Compatibility
+
+- Review licenses of all dependencies
+- Ensure compatibility with project license
+- Document license requirements for distribution
+
+### Supply Chain Security
+
+- Verify dependency sources and maintainers
+- Use official package registries only
+- Implement dependency signing verification when available
+- Regular security scanning of dependency tree
+
+For detailed tooling setup, see [dev-environment.mdc](mdc:dev-environment.mdc). For security aspects of dependency management, see [security.mdc](mdc:security.mdc).

@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Line Endings and Cross-Platform Compatibility
+
+- All shell scripts (`*.sh`, `*.bash`), Python (`*.py`), TypeScript (`*.ts`), JavaScript (`*.js`), JSON (`*.json`), and Markdown (`*.md`) files must use Unix (LF) line endings.
+- The repository must include a `.gitattributes` file at the root to enforce this policy.
+- Contributors should not run bulk line-ending conversion tools (like `dos2unix`) on the entire repo; only convert files that are actually executed in a Unix shell if needed.
+- CI and pre-commit hooks should check for correct line endings in scripts and code files.
+- If a build or script fails due to line endings, fix only the affected file(s) and commit the change.

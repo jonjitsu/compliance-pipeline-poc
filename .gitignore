@@ -154,4 +154,4 @@ temp/
 tmp/
 
 
-*.cursor*
+# *.cursor*

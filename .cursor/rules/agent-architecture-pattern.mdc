@@ -1,0 +1,57 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Agent Architecture and Abstractions
+
+This project is built around a modular, agent-centric architecture. The following abstractions are core to the system and should guide all development and extension:
+
+## Core Agent Components
+
+### Actions
+- Define agent capabilities and response mechanisms
+- Evaluated for each message; valid actions are provided to the LLM
+- Handlers generate responses with a "thought" component
+
+### Providers
+- Supply dynamic, contextual information (the agent's "senses")
+- Inject real-time data into agent context (e.g., news, terminal, wallet, time)
+- Bridge between agent and external systems
+
+### Evaluators
+- Post-interaction cognitive processing
+- Extract knowledge, track relationships, self-reflect, analyze tone, and track goals
+
+### Tasks
+- Manage deferred, scheduled, and interactive operations
+- Queue work, repeat actions, await input, implement workflows
+
+### Plugins
+- Modular extensions for new functionality, integrations, and platform-specific enhancements
+- Can expose HTTP routes as public tabs (must have a "name" property)
+
+### Services
+- Enable agent interaction with external platforms
+- Specialized per platform, maintain consistent agent behavior
+
+### Events
+- All messages and state changes are passed as events
+- Services are decoupled from generic agent event handlers
+
+## Agent Perspective & UUID Mapping
+- The agent's memory system uses deterministic UUID generation for all entities (worlds, rooms, users, etc.)
+- Each agent has a unique set of UUIDs for the same external entities, ensuring separation and consistency
+- Channel → Room and Server → World mappings are core abstractions
+
+## Integration
+- All components integrate through the runtime
+- Services are the state management layer
+- Actions drive agent behavior
+- Providers supply context
+- Evaluators enable learning and reflection
+
+---
+
+For more on project structure, see [project-structure.mdc](mdc:project-structure.mdc). For implementation details, see [typescript.mdc](mdc:typescript.mdc).
+

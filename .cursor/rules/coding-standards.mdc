@@ -1,0 +1,42 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Coding Standards
+
+This project follows the TypeScript and Node.js coding standards defined in [typescript.mdc](mdc:typescript.mdc). All contributors must adhere to these standards to ensure code quality, maintainability, and consistency across the codebase.
+
+## Key Points
+
+- **Follow [typescript.mdc](mdc:typescript.mdc) for all coding, naming, and documentation conventions.**
+- **Use strong typing and avoid `any` in core logic (allowed in tests or for flexibility).**
+- **Both function declarations and arrow functions are allowed.**
+- **Exported constants should be UPPERCASE; internal constants may be camelCase.**
+- **Use Zod for validation schemas, not for all types.**
+- **Document exported/public code with JSDoc; recommended for complex internal code.**
+- **Use `import type` for type-only imports.**
+- **Tests should use `describe` and `it` for structure.**
+- **Use Promise.all for async operations when possible.**
+
+## Quick Reference Table
+
+| Do                                  | Don't                |
+|--------------------------------------|----------------------|
+| Use PascalCase for classes           | Use ambiguous names  |
+| Use camelCase for variables/functions| Use `any` in core    |
+| Use kebab-case for files             | Skip documentation   |
+| Use Zod for validation schemas       | Ignore error handling|
+| Write JSDoc for exported code        | Duplicate code       |
+| Use `import type` for types          |                     |
+
+## Project-Specific Notes
+
+- If you need to diverge from the standards in [typescript.mdc](mdc:typescript.mdc), document the exception clearly in your code and notify the team.
+- For any questions or clarifications, refer to [typescript.mdc](mdc:typescript.mdc) as the canonical source.
+
+---
+
+For full details, see [typescript.mdc](mdc:typescript.mdc).
+
+
