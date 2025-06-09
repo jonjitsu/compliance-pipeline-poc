@@ -1,0 +1,2038 @@
+﻿
+
+
+
+
+A Compliance Checklist for Financial Institutions in Canada
+
+November 2021
+
+INTRODUCTION: A COMPLIANCE CHECKLIST
+FOR FINANCIAL INSTITUTIONS IN CANADA 3
+OVERVIEW OF THE REGULATORY LANDSCAPE 6
+COMPLIANCE CHECKLIST 9
+PART 1: KEY CONSIDERATIONS 10
+Overview 10
+
+Offshoring 24
+Compliance within your Organisation 28
+Subcontractors 39
+Technical and Operational Risk Q&A 41
+Exit Strategy 62
+PART 2: CONTRACT CHECKLIST 64
+FURTHER INFORMATION 88
+
+‌for financial institutions in Canada
+
+OVERVIEW
+Cloud computing is fast becoming the norm, not the exception, for financial
+institutions in Canada. Like all technological advancements, cloud computing provides substantial benefits – but it also creates a complex new environment for financial institutions to navigate. These financial institutions rightly want
+and expect an unprecedented level of assurance from cloud service providers before they move to the cloud.
+Microsoft is committed to providing a trusted set of cloud services to
+financial institutions in Canada. Our extensive industry experience, customer understanding, research, and broad partnerships give us a valuable
+perspective and unique ability to deliver the assurance that our financial institutions customers need.
+This checklist is part of Microsoft’s commitment to financial institutions
+in Canada. We developed it to help financial institutions in Canada adopt
+Microsoft cloud services with confidence that they are meeting the applicable regulatory requirements.
+This document is intended to serve as a guidepost for financial institution
+customers conducting due diligence, including risk assessments, of Microsoft Online Services. The Online Services include those online services defined
+as “Core Online Services” in the Online Services Privacy and Security Terms
+(hereinafter, the “Online Services”). Customers are responsible for conducting appropriate due diligence, and this document does not serve as a substitute for such diligence or for a customer’s risk assessment. While this paper
+focuses principally on Azure Core Services (referred to as “Azure”), Office 365
+
+Services (referred to as “Office 365”) and Dynamics 365 Services (referred to
+as “Dynamics 365”), unless otherwise specified, these principles apply equally to all Online Services. This includes the Compliance Program for Microsoft 
+Cloud, which is built on these set of Online Services which provides for a set of capabilities to meet the needs of financial institutions, underlying a foundation of security and compliance across these services.
+Please be aware that this document is based on the current situation at the
+time of the creation of the document. Taking into account that the regulatory environment as well as our catalogue of products and services and their
+respective technical features are continuously evolving, we recommend to always visit the Microsoft Trust Center (https://www.microsoft.com/en-us/
+trust-center) where Microsoft posts the most recent information related to its products and services.
+
+WHAT DOES THIS CHECKLIST CONTAIN?
+This checklist contains:
+    1. an Overview of the Regulatory Landscape, which introduces the relevant regulatory requirements in Canada;
+    2. a Compliance Checklist, which lists the regulatory issues that need to be addressed and maps Microsoft’s cloud services against those issues; and
+    3. details of where you can find Further Information.
+
+Continued Next Page »
+
+
+Introduction: A compliance checklist for
+financial institutions in Canada (continued)
+
+WH0 IS THIS CHECKLIST FOR?
+This checklist is aimed at federally regulated financial institutions in Canada who want to use Microsoft cloud services. The term “financial institutions” means banks, insurance companies and other federally regulated financial services institutions.
+
+WHAT MICROSOFT CLOUD SERVICES DOES THIS CHECKLIST APPLY TO?
+This checklist applies to Microsoft Office 365, Microsoft Dynamics 365 and Microsoft Azure. You can access relevant information about each of these services at any time via the Microsoft Trust Center.
+
+IS IT MANDATORY TO COMPLETE THE CHECKLIST?
+No. In Canada, there is no mandatory requirement for financial institutions to complete a checklist to adopt Microsoft cloud services. However, through conversations with our many cloud customers in Canada, we understand
+that a checklist approach like this is helpful – first, as a way of understanding the regulatory requirements; second, as a way of learning more about how Microsoft cloud services can help financial institutions meet those regulatory requirements; third, as an internal framework for documenting compliance;
+and fourth, as a tool to streamline consultations with the regulator(s). By reviewing and completing the checklist, financial institutions can adopt Microsoft cloud services with confidence that they are complying with the requirements in Canada.
+This checklist should be read in parallel with the applicable regulatory
+framework (in particular, in relation to the laws and regulations listed in the
+table below that provides an overview of the regulatory landscape) and the internal policies and procedures of financial institutions.
+
+HOW SHOULD WE USE THE CHECKLIST?
+    1. Read: We suggest you begin by reviewing the Overview of the Regulatory Landscape in the next section. This will provide useful context for the
+       sections that follow.
+    2. Conduct a Risk Assessment: Having done so, we suggest that you review the questions set out in the Compliance Checklist and the information
+       provided as a tool to measure compliance against the regulatory
+       framework. The information in this document is provided to help you conduct your risk assessment. It is not intended to replace, or be a
+       substitute for, the work you must perform in conducting an appropriate risk assessment but rather to aid you in that process. Additionally, there are a variety of resources Microsoft makes available to you to obtain
+       relevant information as part of conducting your risk assessment, as well as maintaining ongoing supervision of our services. The information is accessible via Microsoft Compliance and the Service Trust Portal.
+       Microsoft also provides extensive information enabling self-service audit and due diligence on performance of risk assessments through the Compliance Manager. This includes extensive detail on the security controls including
+       implementation details and explanation of how the third party auditors evaluate each control. More specifically, Compliance Manager:
+       
+       Continued Next Page »
+       
+
+       Introduction: A compliance checklist
+       for financial institutions in Canada (continued)
+       
+        ◦ Enables customers to conduct risk assessments of Microsoft cloud services. Combines the detailed information provided by Microsoft to auditors and regulators as part of various third-party audits of
+          Microsoft‘s cloud services against various standards (such as International Organization for Standardization 27001:2013 and ISO 27018:2014)
+          and information that Microsoft compiles internally for its compliance with regulations (such as the EU General Data Protection Regulation or mapping to other required controls) with the customer’s own self-
+          assessment of its organization’s compliance with applicable standards and regulations.
+        ◦ Provides customers with recommended actions and detailed guidance to improve controls and capabilities that can help them meet regulatory requirements for areas they are responsible for.
+        ◦ Simplifies compliance workflow and enables customers to assign,
+       track, and record compliance and assessment-related activities, which can help an organization cross team barriers to achieve their compliance goals. It also provides a secure repository for customers to upload and
+       manage evidence and other artifacts related compliance activities, so that
+       it can produce richly detailed reports in Microsoft Excel that document the compliance activities performed by Microsoft and a customer’s
+       organization, which can be provided to auditors, regulators, and other compliance stakeholders.
+    3. Reach out for support: If you need any additional support or have any questions, Microsoft’s expert team is on hand to support you throughout your cloud project, right from the earliest stages of initial stakeholder
+       engagement through to assisting in any required consultation with the
+       relevant regulators. You can also access more detailed information online, as set out in the Further Information section.
+       ‌Overview of the Regulatory Landscape
+       
+       
+       Are cloud services permitted?
+       Yes.
+       This means that you can consider Microsoft cloud services for the full range of use-cases across your financial institution.
+       
+       
+       Who are the
+       relevant regulators and authorities?
+        ◦ Office of the Superintendent of Financial Institutions (OSFI)
+        ◦ Office of the Privacy Commissioner of Canada
+        ◦ Office of the Information and Privacy Commissioner of Alberta
+        ◦ Office of the Information and Privacy Commissioner for British Columbia
+       
+       
+       What regulations and guidance are relevant?
+       There are several requirements and guidelines that financial institutions should be aware of when moving to the cloud:
+        ◦ OSFI B-10 Guidelines on the Outsourcing of Business Activities, Functions and Processes (OSFI B-10 Guidelines)
+        ◦ Personal Information Protection and Electronic Documents Act (Canada), SC 2000, c 5 (PIPEDA)
+        ◦ Personal Information Protection Act (Alberta), SA 2003, c P-6.5
+        ◦ Personal Information Protection Act (British Columbia), SBC 2003, c 63
+        ◦ An Act respecting the protection of personal information in the private sector (Quebec)
+       
+       
+       Is regulatory
+       approval required?
+       No. There is no requirement for prior notification, consultation or approval. The use of public cloud computing is permitted, subject always to compliance with the requirements set out in the checklist below and laws of general application.
+       
+       
+       What is a “material” outsourcing?
+       This definition is important, since only “material” outsourcings (or those involving any transfer of personal information to the service provider) require specific contractual requirements to be adopted.
+       The assessment of the materiality of an outsourcing arrangement is the responsibility of each financial institution. Each assessment must take into account the specific circumstances of the institution and the nature of the services being outsourced. For the
+       purposes of this guidance (and in order to demonstrate compliance), Microsoft has assumed that the Microsoft cloud services have been assessed to be “material” by the financial institution.
+       
+       
+       Are public cloud
+       services sufficiently secure?
+       Yes.
+       Many financial institutions in Canada are already using public cloud services. Public cloud typically enables customers to take advantage of the most advanced security capabilities and innovations because public cloud services generally adopt those
+       innovations first and have a much larger pool of threat intelligence data to draw upon. An example of this type of innovation in Microsoft cloud services is Advanced Threat Protection in Office 365, which provides a very sophisticated model to detect and mitigate previously unknown malware.
+       
+       
+       Are there any
+       mandatory terms that must be
+       included in the contract with the
+       services provider? (continued)
+       Yes, but only if the outsourcing arrangement is a “material” outsourcing or if it involves any transfer of personal information to the Service Provider.
+       The OSFI B-10 Guidelines indicate that OSFI expects a financial institution to design a risk management program that applies to all of its outsourcing arrangements, with the risk mitigation employed to be commensurate with the risks associated with the
+       particular outsourcing arrangement. However, only those outsourcing arrangements deemed “material” need to be documented by a written contract that addresses safeguards identified in the OSFI B-10 Guidelines. In Part 2 of the Compliance Checklist, below, we have mapped these against the sections in the Microsoft contractual documents where you will find them addressed.
+       
+       Continued Next Page »
+       
+       
+       Are there any
+       mandatory terms that must be
+       included in the contract with the
+       services provider?
+       The financial institution’s use of cloud services must also comply with:
+        ◦ the Personal Information Protection and Electronic Documents Act (Canada); and
+        ◦ in some instances, one or more of the following provincial data privacy laws may also apply:
+            ▪ Personal Information Protection Act (Alberta), SA 2003, c P-6.5;
+            ▪ Personal Information Protection Act (British Columbia), SBC 2003, c 63; and
+            ▪ An Act respecting the protection of personal information in the private sector (Quebec).
+       
+       
+       8 | Overview
+
+       Back to Contents
+       ‌Compliance Checklist
+       HOW DOES THIS COMPLIANCE CHECKLIST WORK?
+       In the “Question/requirement” column, we outline the regulatory requirement that needs to be addressed, based on the underlying requirements.
+       Microsoft recognizes that many elements of the OSFI Guidelines are not mandatory (in that they are identified as items that the financial institution “should”, rather
+       than “must”, address in its agreement with the service provider). However, Microsoft has included these elements in the checklist for the sake of completeness and to highlight how Microsoft’s approach to delivering Online Services helps to manage the risks identified by OSFI.
+       In the “Guidance” column, we explain how the use of Microsoft cloud services address the requirement. Where applicable, we also provide guidance as to where the underlying requirement comes from and other issues you may need to consider.
+       Looking for something specific?
+       
+       Search Document
+
+HOW SHOULD WE USE THE COMPLIANCE CHECKLIST?
+Every financial institution and every cloud services project is different. We suggest that you tailor and build on the template responses based on your financial institution and its proposed use of cloud services.
+
+WHICH PART(S) DO WE NEED TO LOOK AT?
+There are two parts to this Compliance Checklist:
+    • in Part 1, we address the key compliance considerations that apply; and
+    • in Part 2, we list the contractual terms that must be addressed and we indicate where these can be found in Microsoft’s contract documents.
+
+
+9 | Compliance Checklist Back to Contents
+
+‌Part 1: Key Considerations
+WHO DOES THIS PART 1 APPLY TO?
+This Part 1 applies to all deployments of Microsoft cloud services (particularly, Office 365, Dynamics 365 and Azure) by federally regulated financial institutions in Canada.
+
+REF. QUESTION /
+REQUIREMENT
+GUIDANCE
+
+
+A. OVERVIEW
+This section provides a general overview of the Microsoft cloud services
+
+    1. Who is the service provider?
+       OSFI B-10 Guidelines, Section 7.2.1(a)
+       The service provider is either Microsoft Corporation, a global provider of information technology devices and services,
+       which is publicly listed in the USA (NASDAQ: MSFT), or Microsoft Canada Inc., the regional licensing entity for, and wholly- owned subsidiary of, Microsoft Corporation.
+       Microsoft’s full company profile is available here: microsoft.com/en-us/investor/
+       Microsoft’s Annual Reports are available here: microsoft.com/en-us/Investor/annual-reports.aspx
+       
+       
+    2. When is the
+       proposed start
+       date of this outsourcing
+       arrangement
+       and what is the
+       planned duration?
+       OSFI B-10 Guidelines, Section 7.2.1(a)
+       Please insert the proposed start date of the outsourcing service.
+       
+
+       
+       REF. QUESTION /
+       REQUIREMENT
+       GUIDANCE
+       
+    3. What cloud
+       services are you
+       using?
+       All references to information about your cloud services may be found here: https://www.microsoft.com/en-us/trust- center/product-overview. Through this link there is access to information about:
+        ◦ Microsoft Office 365
+        ◦ Microsoft Dynamics 365
+        ◦ Microsoft Azure
+       
+    4. What activities and operations
+will be outsourced to the service
+provider? Are
+these critical to your business or operations?
+(continued)
+OSFI B-10 Guidelines, Section 7.2.1(a)
+This Compliance Checklist is designed for financial institutions using Office 365, Dynamics 365 and/or Azure. Each service is different and there are many different options and configurations available within each service.
+The response below will need to be tailored depending on how you intend to use Microsoft cloud services
+and which Online Services you use. The Online Services include those online services defined as “Core Online Services” in the Online Services Privacy and Security Terms (hereinafter, the “Online Services”). Your Microsoft contact can assist as needed.
+This Compliance Checklist is designed for financial institutions using Office 365, Dynamics 365 and/or Azure. Each service is different and there are many different options and configurations available within each service. The response below will need to be tailored depending on how you intend to use Microsoft cloud services and which Online Services you use. The Online Services include those online services defined as “Core Online Services” in the Online Services Privacy and Security Terms (hereinafter, the “Online Services”). Your Microsoft contact can assist as needed.
+If using Office 365, services would typically include:
+    • Microsoft Office applications (Outlook, Word, Excel, PowerPoint, OneNote and Access)
+    • Exchange Online
+    • OneDrive for Business, SharePoint Online, Microsoft Teams, Yammer Enterprise, Intune
+      
+      Continued Next Page »
+
+      
+      REF. QUESTION /
+      REQUIREMENT
+      GUIDANCE
+      
+        1. What activities and operations
+           will be outsourced to the service
+           provider? Are
+           these critical to your business or operations?
+           If using Dynamics 365, services would typically include:
+    • Microsoft Dynamics 365 for Customer Service, Microsoft Dynamics 365 for Field Service, Microsoft Dynamics 365 for Project Service Automation, Microsoft Dynamics 365 for Sales and Microsoft Social Engagement
+    • Microsoft Dynamics 365 for Finance and Operations (Enterprise and Business Editions), Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Talent
+      If using Microsoft Azure, services would typically include:
+    • Virtual Machines, App Service, Cloud Services
+    • Virtual Network, Azure DNS, VPN Gateway
+    • File Storage, Disk Storage, Site Recovery
+    • SQL Database, Machine Learning
+    • IoT Hub, IoT Edge
+    • Data Catalog, Data Factory, API Management
+    • Security Center, Key Vault, Multi-Factor Authentication
+    • Azure Blockchain Service
+
+
+
+REF. QUESTION /
+REQUIREMENT
+GUIDANCE
+
+    1. What type of cloud services
+       would your
+       organization be using?
+       An understanding of the type of cloud solution may be relevant when determining the risk associated with the solution. With Microsoft cloud services, a range of options exists, including public and hybrid cloud, but
+       given the operational and commercial benefits to customers, public cloud is increasingly seen as the standard deployment model for most institutions.
+       If using Office 365 and/or Dynamics 365:
+       Customers can configure the service such that core categories of data are stored at rest within a region or “Geo”. Canada is often an available Geo. These categories of data are described in the interactive datacentres map at https://www.
+       microsoft.com/en-us/trust-center/privacy/data-location. In the case of Office 365, if Customer provisions its tenant in Canada, Microsoft will store the following Customer Data at rest only within Canada: (1) Exchange Online mailbox
+       content (e-mail body, calendar entries, and the content of e-mail attachments), (2) SharePoint Online site content and
+       the files stored within that site, and (3) files uploaded to OneDrive for Business. In the case of Dynamics 365 Core Service, if Customer provisions a Dynamics 365 Core Service to be deployed within Canada, then, for that service, Microsoft will
+       store Customer Data at rest within Canada, except as described in the Microsoft Dynamics 365 Trust Center. If using Azure Core Services:
+       Customers can configure the service such that core categories of data are stored at rest within a region or Geo. Canada is often an available Geo. These categories of data are described in the interactive datacentres map at: https://azure. microsoft.com/en-us/global-infrastructure/data-residency/.
+       
+
+       
+       REF. QUESTION /
+       REQUIREMENT
+       GUIDANCE
+       
+    2. What data will be processed/stored
+       by the service
+       provider on behalf of the financial
+       institution? Is the data considered to be sensitive?
+       OSFI B-10 Guidelines, Sections 7.2.1(f) and 7.2.1(j)
+       When you choose Microsoft cloud services, the types of data impacted are within your control so the guidance set out below will need to be tailored depending on what data you have selected is relevant to the solution.
+       Pursuant to the terms of the contract in place with Microsoft, all data is treated with the highest level of security so that you can continue to comply with your legal and regulatory obligations and your commitments to customers. You will
+       only collect and process data that is necessary for your business operations in compliance with all applicable laws and
+       regulation and this applies whether you process the data on your own systems or via a cloud solution. Typically, the types of data that would be processed and stored by Microsoft cloud services would include:
+       
+	TYPE OF DATA	PROCESSED / STORED /
+BOTH	SENSITIVE (Y/N)
+1.	Customer data (including customer name, contact details, account information, payment card data,
+security credentials and correspondence)	
+Both	
+Y
+2.	Employee data (including employee name, contact details, internal and external correspondence by
+email and other means and personal information
+relating to their employment with the organisation)	
+Both	
+Y
+3.	Transaction data (data relating to transactions in which the organization is involved)	
+Both	
+Y
+4.	Indices (for example, market feeds)	Both	N
+5.	Other personal and non-personal data relating to
+the organization’s business operations as a financial institution	
+Both	
+Y
+       
+
+       
+       REF QUESTION /
+       REQUIREMENT
+       GUIDANCE
+       
+    3. Does the
+       outsourcing
+       contract set out the physical
+       location where the Service Provider will
+       provide the services?
+       OSFI B-10 Guidelines, Sections 7.2.1(a)
+       Microsoft provides data location transparency and allows customers to choose that certain categories of data will be stored at-rest within Canada. The local Microsoft Cloud enables data residency for customers in Canada. This includes
+       data replication in multiple regions within Canada for business continuity, reduced network distance, and the option of a private connection to the cloud with Azure ExpressRoute. Azure, Office 365 and Dynamics 365 can all be served from datacentre regions in Canada. Microsoft is transparent in relation to the location of customer data. Microsoft datacentre locations are made public on the Microsoft Trust Center.
+       If using Office 365 and/or Dynamics 365:
+       Customers can configure the service such that core categories of data are stored at rest within Canada. These categories of data are described the resources at o365datacentremap.azurewebsites.net, and https://docs.microsoft.com/en-us/ microsoft-365/enterprise/o365-data-locations?view=o365-worldwide#canada. Certain other categories of data may be stored outside of Canada and the relevant locations are also described in these resources. For Dynamics 365, data
+       residency means that most customer data will be kept within Canada. If using Azure Core Services:
+       Customers can configure the service such that core categories of data are stored at rest within Canada. These categories of data are described in the interactive datacentres map at: https://azure.microsoft.com/en-us/global-infrastructure/ geographies/#overview.
+       
+
+       
+       REF. QUESTION /
+       REQUIREMENT
+       GUIDANCE
+       
+    4. How is the issue of counterparty
+risk addressed through your
+choice of service provider?
+(continued)
+Financial institutions should do their due diligence on the service provider to address risks associated with a
+service provider failing to meet the terms of any agreement or otherwise to perform as agreed. The following is a summary of the factors that our customers typically tell us are important. To access more information about Microsoft compliance practices and support for customers, visit Microsoft Compliance and the Trust Center.
+        1. Competence. Microsoft is an industry leader in cloud computing. Microsoft cloud services were built based on ISO/ IEC 27001 and ISO/IEC 27018 standards, a rigorous set of global standards covering physical, logical, process and
+           management controls. A list of its current certifications is available at microsoft.com/en-us/trustcenter/compliance/ complianceofferings. From a risk assurance perspective, Microsoft’s technical and organizational measures are
+           designed to meet the needs of financial institutions globally. Microsoft also makes specific commitments across its Online Services in its Product Terms available at https://www.microsoft.com/en-sg/Licensing/product-licensing/ products.aspx.
+        2. Track-record. Many of the world’s top companies use Microsoft cloud services. There are various case studies relating to the use of Microsoft cloud services at customers.microsoft.com. Customers have obtained regulatory approvals
+           (when required) and are using Online Services in all regions of the globe including Asia, North America, Latin America, Europe, Middle East and Africa. Key countries of adoption include, by way of example: the United States, Canada,
+           Hong Kong, Singapore, Australia, Japan, Taiwan, Indonesia, United Arab Emirates, Malaysia, the United Kingdom, France, Germany, Italy, Spain, the Netherlands, Poland, Belgium, Denmark, Norway, Sweden, Czech Republic, Brazil, Luxembourg, Hungary, Mexico, Chile, Peru, Argentina, South Africa, and Israel. Office 365 has grown to have over
+           300 million users, including some of the world’s largest organizations and financial institutions. Azure continues to experience rapid growth and has over 400 million users, and over 85% of the largest financial institutions use or have committed to use Azure services.
+        3. Specific financial services credentials. Financial institution customers in leading markets, including in the UK,
+           France, Germany, Australia, Singapore, Canada, the United States and many other countries have performed their due diligence and, working with their regulators, are satisfied that Microsoft cloud services meet their respective regulatory requirements. This gives customers confidence that Microsoft can help meet the high burden of financial services
+           regulation and is experienced in meeting these requirements.
+           
+           Continued Next Page »
+
+           
+           REF. QUESTION /
+           REQUIREMENT
+           GUIDANCE
+           
+            1. How is the issue of counterparty
+               risk addressed through your
+               choice of service provider?
+        4. Financial strength of Microsoft. Microsoft Corporation is publicly-listed in the United States and is amongst the world’s largest companies by market capitalization. Microsoft has a strong track record of stable profits. Its market capitalization is in excess of USD $2 trillion as of July 1, 2021 (stock tracker available here), making it one of the top
+           three capitalized companies on the planet, Microsoft has been in the top 10 global market capitalized countries since 2000, and, indeed, is the only company in the world to consistently place in the top 10 of global market capitalized
+           firms in the past twenty years. Its full company profile is available here: microsoft.com/en-us/investor/ and its Annual Reports are available here: microsoft.com/en-us/Investor/annual-reports.aspx. Accordingly, customers should have no concerns regarding its financial strength.
+        5. Insurance coverage. Microsoft maintains self-insurance arrangements for most of the areas where third party
+           insurance is typically obtained and can make certificates of insurance available upon request. Microsoft has taken the commercial decision to take this approach, and considers that this does not detrimentally affect its customers, given Microsoft’s financial position set out in Microsoft’s Annual Reports.
+        6. Audit rights. The Microsoft Financial Services Amendment provides for rights of audit, and additional customer
+benefits, including (a) access to community events organized by Microsoft related to updates to the Online Services, Microsoft responses to regulator changes, and to provide additional feedback to Microsoft for further development of the Online Services; (b) submit a written request to meet with Microsoft’s external auditors; (c) receive from Microsoft written responses to updated regulator guidance; (d) receive responses from Microsoft about Microsoft responses and changes to services based on regulatory changes; (e) access Microsoft personnel for raising questions and escalations relating to Microsoft cloud services; (f ) receive communication from Microsoft on (1) the nature, common causes, and resolutions of security incidents and other circumstances that can reasonably be expected to have a material service
+impact on the customer’s use of Microsoft cloud services, (2) Microsoft’s risk-threat evaluations, and (3) significant
+changes to Microsoft’s business resumption and contingency plans or other circumstances that might have a serious impact on the customer’s use of Microsoft cloud services, and (g) receive access to a summary report of the results of Microsoft’s third party penetration testing against Microsoft cloud services (e.g. evidence of data isolation among
+tenants in the multi-tenanted services.
+
+
+
+REF. QUESTION /
+REQUIREMENT
+GUIDANCE
+
+    1. Does the
+       outsourcing
+       agreement contain
+       
+       Yes.
+       OSFI B-10 Guidelines, Section 7.2.1(b)
+       performance measures that
+       allow each party to determine
+       whether the commitments
+       contained in the contract are being fulfilled?
+       The SLA contains the performance measures for Microsoft. All of these aspects of service levels, performance targets, service availability, reliability, stability and upgrade are covered in the SLA. The SLA contains Microsoft’s service level commitment, as well as the remedies for the customer in the event that Microsoft does not meet the commitment.
+       Customers are able to determine whether or not Microsoft is meeting its commitments under the SLA with the
+       information that they obtain through the “service health” dashboards (Office 365 Service Health Dashboard and Azure Status Dashboard) and reports that they receive under the Financial Services Amendment, which can be accessed
+       through the Service Trust Portal.
+       For information regarding uptime for each Online Service, refer to the Service Level Agreement for Microsoft Online Services.
+
+       
+       REF. QUESTION /
+       REQUIREMENT
+       GUIDANCE
+       
+    2. Does the
+       outsourcing
+       agreement provide for
+       periodic reports (including
+       specifying
+       the type and
+       frequency of any such reports)
+       to be prepared and delivered to you by the
+       service provider to allow you to assess whether
+       the performance measures are
+       being met
+       and any other information required for
+       your monitoring program?
+       OSFI B-10 Guidelines, Section 7.2.1(c)
+       The guidance below sets out certain features of Microsoft cloud services that can make monitoring easier
+       for you. In addition, you may sign up for Premier Support, in which a designated Technical Account Manager serves as a point of contact for day-to-day management of the Microsoft cloud services and your overall
+       relationship with Microsoft.
+       Microsoft provides access to “service health” dashboards (Office 365 Service Health Dashboard and Azure Status 
+       Dashboard) providing real-time and continuous updates on the status of Microsoft Online Services. This provides your IT administrators with information about the current availability of each service or tool (and history of availability status),
+       details about service disruption or outage and scheduled maintenance times. The information is provided online and via an RSS feed.
+       As part of its certification requirements, Microsoft is required to undergo independent third-party auditing, and it shares with the customer the independent third party audit reports. Microsoft also makes available a wealth of resources online to provide transparency and assurance to customers in the Microsoft compliance documentation dashboard.
+       
+
+       
+       REF. QUESTION /
+       REQUIREMENT
+       GUIDANCE
+       
+    3. Does the
+       outsourcing
+       agreement
+       specify the type and frequency of information you receive
+       from the service
+       provider, including procedures and
+       requirements for the service
+       provider to report events to you
+       that may have
+       the potential to materially affect
+       the delivery of the services?
+       OSFI B-10 Guidelines, Section 7.2.1(c)
+       Microsoft provides various materials to help you to perform and assess the compliance of Microsoft cloud services – including audit reports, security assessment documents, in-depth details of security and privacy controls, FAQs
+       and technical white papers – at: https://docs.microsoft.com/en-us/compliance/. Microsoft will notify the customer if it becomes aware of any security incident, and will take reasonable steps to mitigate the effects and minimize the
+       damage resulting from the security incident. Microsoft defines a security incident as a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Customer Data, Professional Services Data, or Personal Data while processed by Microsoft. Definitions of Customer Data, Professional Services Data and Personal Data are set out in the Microsoft Products and Services Data Protection Addendum (“Data Protection Addendum” or “DPA”).
+       
+
+       
+       REF. QUESTION /
+       REQUIREMENT
+       GUIDANCE
+       
+    4. Does the
+       outsourcing
+       agreement incorporate a protocol
+       for resolving disputes?
+       Does the
+       outsourcing
+       agreement specify whether the
+       Service Provider must continue providing the
+       service during a dispute and the
+       resolution period, as well as the
+       jurisdiction and rules under which
+       the dispute will be settled?
+       OSFI B-10 Guidelines, Section 7.2.1(d)
+       Microsoft contractually agrees to provide the services for the duration of the contract and can commit to continue
+       delivering the services in the event of a good faith dispute between the parties. Generally speaking, as long the customer complies with its obligations under the contract, Microsoft will continue to provide the services. There are very limited
+       situations where Microsoft may suspend/terminate the services. Microsoft will usually provide reasonable notice before suspending the services.
+       The Microsoft Business and Services Agreement (MBSA) (refer to the dispute resolution section) sets out the jurisdictions in which parties should bring their actions. Microsoft must bring actions against the customer in the countries where
+       the customer’s contracting party is headquartered. The customer must bring actions against: (a) in Ireland if the action is against a Microsoft affiliate in Europe; (b) in the State of Washington, if the action is against a Microsoft affiliate outside of Europe; or (c) in the country where the Microsoft affiliate delivering the services has its headquarters if the action is to enforce a Statement of Services.
+       The MBSA (refer to the dispute resolution section) sets out the choice of law provision. Either the contract is governed by the laws of the State of Washington if the contract is with a Microsoft affiliate located outside of Europe; or the contract is governed by the laws of Ireland if the contract is with a European Microsoft affiliate.
+       
+
+       
+       REF. QUESTION /
+       REQUIREMENT
+       GUIDANCE
+       
+    5. Does the
+       outsourcing
+       agreement identify and establish the ownership of all
+       assets (intellectual and physical,
+       and including
+       assets generated or purchased
+       pursuant to the outsourcing
+       arrangement) related to the outsourcing
+       arrangement?
+       Does the
+       outsourcing
+       agreement state whether and
+       how the service provider has the right to use your assets (e.g., data, hardware and
+       software, system documentation or intellectual
+       property) and your right of access to
+       those assets?
+       OSFI B-10 Guidelines, Section 7.2.1(f)
+       Ownership of documents, records and other data remain with the customer and at no point transfer to Microsoft or
+       anyone else. Customer data will only be used to provide the products and services to customer and for limited business operations incident to provide the products and services to customer (related details are set out in the Data Protection
+       Addendum). When providing products and services, we will not use or otherwise process customer data for user profiling, advertising or similar commercial purposes, or market research aimed at creating new functionalities, services, or
+       products or any other purpose, unless such use or processing is in accordance with customer’s documented instructions. Being a cloud services solution, ownership of software and hardware used to provide the service remains with Microsoft.
+       The outsourcing agreement with Microsoft provides customers with the ability to access and extract their customer data stored in each Online Service at all times during their subscription.
+       
+
+       
+       REF. QUESTION /
+       REQUIREMENT
+       GUIDANCE
+       
+    6. Does the
+       outsourcing
+       agreement fully
+       
+       Yes.
+       OSFI B-10 Guidelines, Section 7.2.1(k)
+       describe the basis for calculating fees and compensation relating to the
+       services being provided?
+       Note that sales of Microsoft product to enterprise customers are made via a Microsoft reseller, who sets the end price with the customer. The basis for the pricing will therefore be set out in a separate agreement with Microsoft’s reseller.
+       Microsoft has a variety of flexible licensing models. It is worth noting that one of the key benefits of cloud services is
+       that the customer gets to run the latest version of product, thereby overcoming the issue of manual software upgrades and upgrade pricing.
+       Please refer to the arrangements with your Microsoft reseller for more information.
+       A service credit regime is included in your contract with Microsoft (see generally the SLA).
+       
+    7. Does the
+       outsourcing
+       agreement provide that the service
+       provider will
+       notify you about
+       significant changes in insurance
+       coverage and
+       disclose general terms and
+       conditions of the insurance coverage?
+       OSFI B-10 Guidelines, Section 7.2.1(l)
+       Microsoft maintains self-insurance arrangements for most of the areas where third party insurance is typically obtained and can make certificates of insurance available upon request. Microsoft has taken the commercial decision to take this approach, and considers that this does not detrimentally affect its customers, given Microsoft’s financial position set out in Microsoft’s Annual Reports
+       
+
+       
+       B. OFFSHORING
+       
+
+    8. Where are the datacentre(s)
+       of the service
+       provider located?
+       Indicate the datacentre(s) in which your
+       organization’s sensitive data
+       would be stored
+       and/or processed. (continued)
+       Microsoft provides data location transparency and allows customers to choose that certain categories of data will be stored at-rest within Canada. The local Microsoft Cloud enables data residency for customers in Canada. This includes
+       data replication in multiple regions within Canada for business continuity, reduced network distance, and the option of a private connection to the cloud with Azure ExpressRoute. Azure, Office 365 and Dynamics 365 can all be served from datacentre regions in Canada. Microsoft is transparent in relation to the location of customer data at rest. Microsoft
+       datacentre locations are made public on the Microsoft Trust Center. If using Office 365 and/or Dynamics 365:
+       Customers can configure the service such that core categories of data are stored at rest within Canada. These categories of data are described in the resources at o365datacentremap.azurewebsites.net and https://docs.microsoft.com/en- us/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide#canada. Certain other categories of data
+       may be stored outside of Canada and the relevant locations are also described in these resources. For Dynamics 365, data residency means that most customer data will be stored at rest within Canada.
+       If using Azure Core Services:
+       Customers can configure the service such that core categories of data are stored at rest within Canada. These categories of data are described in the interactive datacentres map at: https://azure.microsoft.com/en-us/global-infrastructure/ geographies/#overview.
+       
+       Continued Next Page »
+       
+       24 | Key Considerations | Offshoring Back to Contents
+       
+       16 Where are the
+NO.	LOCATIONS OF DATACENTRE USE TO STORE CUSTOMER DATA AT REST	CLASSIFICATION OF DC: TIER I, II, III OR IV	STORING YOUR
+ORGANIZATION’S DATA (Y/N)
+			
+			
+       datacentre(s) of the
+       service provider located? Indicate the datacentre(s) in which your
+       organization’s
+       sensitive data would be stored and/or
+       processed.
+       The table below will need to be filled in depending on the specific solution that you are taking up.
+       
+       25 | Key Considerations | Offshoring Back to Contents
+
+       
+    9. Have the following risks with regards
+       to the environment of the jurisdiction
+       in which the service provider operates been considered
+       in the selection
+       process? Describe the assessment of these risks.
+        1. Political.
+        2. Country/
+           socioeconomic.
+        3. Infrastructure/ security/
+           terrorism.
+        4. Environmental
+           (i.e., earthquakes, typhoons,
+           floods).
+        5. Legal.
+           OSFI B-10 Guidelines, Sections 7.1 and 7.2.4.
+            1. Political (i.e. cross-border conflict, political unrest etc.)
+               Our customers know where their data is hosted. Microsoft reviews the political environments of the relevant
+               jurisdictions where data is hosted, and maintains robust cloud exit planning guidelines and strategies to adjust
+               quickly to instability in political environments or to otherwise respond to challenges within a jurisdiction where data is hosted.
+            2. Country/socioeconomic
+               Microsoft’s datacentres are strategically located around the world, taking into account country and socioeconomic factors. The relevant locations constitute stable socioeconomic environments.
+            3. Infrastructure/security/terrorism
+               Microsoft’s datacentres around the world are secured to the same exacting standards, designed to protect customer data from harm and unauthorized access. This is outlined in more detail at microsoft.com/en-us/trustcenter/security.
+            4. Environmental (i.e. earthquakes, typhoons, floods)
+               Microsoft datacentres are built in seismically safe zones. Environmental controls have been implemented to
+               protect the datacentres including temperature control, heating, ventilation and air-conditioning, fire detection and
+               suppression systems and power management systems, 24-hour monitored physical hardware and seismically-braced racks. These requirements are covered by Microsoft’s ISO/IEC 27001 accreditation.
+            5. Legal
+               Customers will have in place a binding negotiated contractual agreement with Microsoft in relation to the
+               outsourced service, giving them direct contractual rights and maintaining regulatory oversight. The terms are summarized in Part 2.
+               
+               26 | Key Considerations | Offshoring Back to Contents
+
+               
+    10. If the Service
+       Provider is a listed
+       company, have you reviewed its filings to the relevant
+       authorities (e.g.,
+       the relevant stock exchanges or
+       market regulators)? If yes, how is the
+       Service Provider dealing with
+       the threats and vulnerabilities it
+       has declared in its filings?
+       OSFI B-10 Guidelines, Section 7.1
+       Microsoft’s full company profile is available here: microsoft.com/en-us/investor/ and its Annual Reports are available here: microsoft.com/en-us/Investor/annual-reports.aspx.
+       There are no threats or vulnerabilities relevant to the Online Services in such filings.
+       
+       27 | Key Considerations | Offshoring Back to Contents
+
+       
+       C. COMPLIANCE WITHIN YOUR ORGANISATION
+       Although this is a matter for each financial institution, Microsoft provides some guidance, based on its experience of approaches taken by its customers. Ultimately this will need to be tailored for your financial institution to reflect its compliance practices.
+       
+    11. The financial
+institution should
+consider its
+overall business and strategic
+objectives prior to outsourcing. Please elaborate on the
+factors considered and the rationale for entering this
+outsourcing arrangement. (continued)
+Your management would need to have considered the overall business and strategic objectives. We would suggest including details of the following:
+        1. your business case for outsourcing the specific operations and the factors considered for using Microsoft cloud services;
+           You should prepare a business case for the use of Microsoft cloud services. Where appropriate, this could include
+           reference to some of the key benefits of Microsoft cloud services, which are described at: https://www.microsoft.com/ en-us/trust-center/product-overview.
+           Through this link there is access to information about:
+            ▪ Microsoft Office 365
+            ▪ Microsoft Dynamics 365
+            ▪ Microsoft Azure
+              The factors listed below may be used to prepare a business case for the use of Microsoft Online Services:
+            ▪ Affordability. Microsoft Online Services make enterprise-class technologies available at an affordable price for small and mid-sized companies
+            ▪ Security. Microsoft Online Services include extensive security to protect customer data. It should be satisfied that the service provider implements appropriate technical and organizational measures to protect the data.
+              
+              Continued Next Page »
+              
+              19 The financial
+              institution should
+              consider its
+              overall business and strategic
+              objectives prior to outsourcing. Please elaborate on the
+              factors considered and the rationale for entering this
+              outsourcing arrangement. (continued)
+            ▪ Availability. Microsoft’s datacentres provide first-rate disaster recovery capabilities, are fully redundant, and are geographically dispersed to ensure the availability of data, thereby protecting data from natural disasters and
+              other unforeseen complications. Microsoft also provides a financially backed guarantee of 99.9% uptime for most of its Online Services.
+            ▪ Resiliency. Microsoft provides system availability and resiliency through its hyperscale cloud platform that is
+              designed to prevent single points of failures by deploying multiple instances of an application to geo dispersed locations. Microsoft operates the Azure cloud across Availability Zones within each Azure region. There are
+              over 60 Azure regions worldwide, each with numerous Availability Zones. As a result, Azure Cloud Services are architected to be resilient from region-level failures, with multiple resiliencies throughout the system in each region. When a cloud customer deploys its cloud virtual machines across at least two Availability Zones within
+              an Azure region, Microsoft projects 99.99% uptime. This provides for high zone availability and mitigates the risk of any single datacentre going down while other systems are running in another availability zone. Appropriate customer configuration and use of Availability Zones and region pairs is important. Microsoft helps customers
+              with recommendations on configuration of zone availability and regional pairs, and Azure Secure Score provides customers important guidance on configuration, and provides other guidance on resiliency measures. A white paper on Azure resiliency is available here.
+            ▪ IT control and efficiency. Microsoft Online Services perform basic IT management tasks—such as retaining
+              security updates and upgrading back-end systems—that allow company IT employees to focus their energy on more important business priorities. IT staff retain control over user management and service configuration. The continuous nature of Microsoft Online Services in terms of managing updates, addressing security threats, and providing real-time improvements to the service are unmatched relative to traditional legacy private hosted
+              cloud environments.
+            ▪ User familiarity and productivity. Because programs like Microsoft Office, Outlook, and SharePoint are hosted on the cloud, company employees can access information remotely from a laptop, PC, or Smartphone.
+
+Continued Next Page »
+
+19 The financial
+institution should
+consider its
+overall business and strategic
+objectives prior to outsourcing. Please elaborate on the
+factors considered and the rationale for entering this
+outsourcing arrangement. (continued)
+    1. internal processes that were carried out;
+       You will need to describe what internal processes were carried out. The factors listed in (a) may be used in the
+       description of the selection process used to select the service provider (e.g. Microsoft’s track record and reputation).
+    2. due diligence review of the chosen service provider, including the ability of the service provider to conduct the business activity on an ongoing basis;
+       Microsoft provides various materials to help you to perform and assess the compliance of Microsoft cloud services – including audit reports, security assessment documents, in-depth details of security and privacy controls, FAQs and technical white papers at: https://docs.microsoft.com/en-us/compliance/.
+    3. who handled the decision making process, which areas of the business were involved or advised and any details of external consultants or legal counsel involved;
+       We would suggest having a list, setting out the position of the key people involved in the selection and any decision- making and approvals processes used.
+    4. details of Board approval sought prior to outsourcing the contract;
+       Each organization will of course have its own internal approval processes. Where this does include Board sign-off then this will not be an issue. Where it does not, you will need to briefly explain how the sign-off processes work (i.e. how a
+       right of approval has effectively been delegated by the Board). Again, details of the relevant decision-makers should be included here.
+    5. acknowledgement of the risks by the Board of Directors or a relevant committee of the Board; The financial institution is responsible for engaging in a review of the outsourcing arrangement.
+    6. vetting of the outsourcing agreement by a competent authority;
+       The financial institution is responsible for engaging with its regulators regarding the outsourcing arrangement.
+       
+       Continued Next Page »
+       
+        1. The financial
+           institution should
+           consider its overall business and
+           strategic objectives prior to outsourcing.
+           Please elaborate on the factors
+           considered and the rationale for entering this outsourcing
+           arrangement.
+    7. established procedures for monitoring performance under the outsourcing agreement on a continuing basis;
+       See Question 10 for relevant information about the measures offered by Microsoft to enable customers to monitor performance.
+    8. the renewal process for outsourcing agreements and how the renewal will be conducted;
+       The outsourcing agreement with Microsoft runs on an ongoing basis. The Financial Services Amendment provides that Customers may also terminate an Online Service at the express direction of a regulator with reasonable notice. Microsoft’s contractual documents anticipate renewal.
+    9. contingency plans that would enable the outsourced business activity to be provided by an alternative service provider or brought in-house if required
+While your financial institution is ultimately responsible for developing its own contingency plans, based on its
+circumstances, Microsoft has developed a template that can be used to help develop a plan. This is available from the Microsoft Service Trust Portal or from your Microsoft contact upon request.
+During the term of the agreement as well as upon expiration or termination, the customer can extract its data related to its use of the Online Services. As set out in the Product Terms, Microsoft will retain customer data stored in the
+Online Service in a limited function account for 90 days after expiration or termination of the customer’s subscription so that the customer may extract the data. After the 90-day retention period ends, Microsoft will disable the
+customer’s account and delete the customer data. Microsoft will disable the account and delete customer data from
+the account no more than 180 days after expiration or termination of customer’s use of an Online Service. In the event of a termination and where a customer chooses to migrate to a different online service, customers may request that
+Microsoft provides assistance in such transition through Microsoft’s Professional Services organization. Customers may also request migration or transition assistance and support from Microsoft’s Professional Services organization at any
+time during the extended service period.
+
+
+    1. Has your
+organization
+performed a risk assessment of
+this outsourcing arrangement,
+including security risk assessment
+against the latest security threats?
+Please elaborate on the key risks and
+threats that have been identified for this outsourcing
+arrangement and
+the actions that have been or will be taken to address them.
+(continued)
+You should ensure that you have carried out comprehensive due diligence on the nature, scope and complexity of
+the outsourcing to identify the key risks and risk mitigation strategies. We have made suggestions regarding common issues below and you will need to expand on our guidance to describe what you see as the key risks and what risk
+processes you have carried out as part of this project.
+    • identify the role of outsourcing in the overall business strategy and objectives of the institution;
+    • risk identification;
+    • analysis and quantification of the potential impact and consequences of these risks;
+    • risk mitigation and control strategy; and
+    • ongoing risk monitoring and reporting.
+If you have any questions when putting together a risk assessment, please do not hesitate to get in touch with your Microsoft contact. The following should be considered in your risk assessment:
+    1. Data security: By transferring certain data processing operations to a third party, customers should be aware that they need to ensure that their selected outsourcing partner has in place appropriate and reasonable technical and organizational measures to protect the data. This is necessary both from a financial services regulatory perspective as well as the organization’s compliance with data protection legislation. This should be of utmost importance to customers and therefore they should carry out a robust assessment as part of their selection process. Customers
+       that select Microsoft as an outsourcing partner take heavily into account the fact that it is an industry leader in
+       cloud security and implements policies and controls on par with or better than on-premises datacentres of even the most sophisticated organizations. Microsoft is ISO/IEC 27001 and ISO/IEC 27018 accredited.
+       The Microsoft cloud services security features consist of three parts: (a) built-in security features; (b) security controls; and (c) scalable security. These include 24-hour monitored physical hardware, isolated customer data, automated operations and lock- box processes, secure networks and encrypted data.
+       
+       Continued Next Page »
+       
+       
+        1. Has your
+           organization
+           performed a risk assessment of
+           this outsourcing arrangement,
+           including security risk assessment
+           against the latest security threats?
+           Please elaborate on the key risks and
+           threats that have been identified for this outsourcing
+           arrangement and
+           the actions that have been or will be taken to address them.
+    2. Access and audit: In addition to ensuring that relevant security and other safeguards are put in place up front, it is
+       essential that the outsourcing arrangement provides for customers to ensure that such standards and commitments and regulatory requirements are adhered to in practice. Customers should be aware that audit and access in order to verify this can be a difficult issue in outsourcing and therefore should make this a high priority requirement as
+       part of their outsourcing. Another reason for the selection of Microsoft in this case is that it permits regulator audit and inspection of its datacentres and in agreed circumstances inspection rights for its financial services customers.
+    3. Control: The handing over of a certain amount of day to day responsibility to an outsourcing provider does present certain challenges in relation to control of data. What is essential to customers is that despite the outsourcing they retain control over their own business operations, including their data. At a contractual level, customer would
+       have dealt with this via their agreement with Microsoft, which provides them with legal mechanisms to manage the relationship including appropriate allocation of responsibilities, oversight and remedies. At a practical level,
+       customers select Microsoft cloud services because they provide customers with control over data location, access
+       and authentication and advanced encryption controls. Customers continue to own and retain all rights to their data.
+       
+       
+       
+        1. Is there a vendor management
+           process to monitor the performance of
+           the service provider?
+           OSFI B-10 Guidelines, Sections 7.3.2 and 7.3.3
+           In addition to your own internal processes, you may in this context also wish to mention the contractual vendor management rights that you have under your agreements with Microsoft, including the rights of audit and inspection.
+           Microsoft provides access to “service health” dashboards (Office 365 Service Health Dashboard and Azure Status Dashboard) providing real-time and continuous updates on the status of Microsoft Online Services. This provides
+           your IT administrators with information about the current availability of each service or tool (and history of availability status), details about service disruption or outage and scheduled maintenance times. The information is provided
+           online and via an RSS feed.
+           As part of its certification requirements, Microsoft is required to undergo independent third-party audits, and it shares with the customer the independent third party audit reports. Microsoft also makes available a wealth of resources
+           online to provide transparency and assurance to customers in the Microsoft compliance documentation dashboard.
+           
+           
+        2. Does your
+       organization have a
+       process to audit the Service Provider to
+       assess its compliance with your policies,
+       procedures, security controls and
+       the outsourcing agreement?
+       (continued)
+       OSFI B-10 Guidelines, Sections 7.3.2 and 7.3.3
+       This is a question about your own internal processes, although it is of course relevant in this context to mention that Microsoft permits audit and inspection both by their financial institution customers and regulators.
+       The Financial Services Amendment provides customers and their auditors with the unrestricted rights of inspection and auditing related to the outsourcing arrangement, which includes specific rights of access to business premises for financial services customers via special contractual provisions designed for regulated customers in the financial
+       services sector. Additionally, the Financial Services Amendment provides the customer’s regulator to examine or audit the Online Services in order to meet the regulator’s supervisory obligations of Microsoft as a direct service provider of the customer. These rights enable such customers to comply with their regulatory obligations through direct access to business premises, to information, Microsoft personnel and Microsoft’s external auditor.
+       
+       Continued Next Page »
+       
+       
+        3. Does your
+           organization have a
+           process to audit the Service Provider to
+           assess its compliance with your policies,
+           procedures, security controls and
+           the outsourcing agreement?
+           Customers may also participate in the optional Compliance Program for the Microsoft Cloud to obtain additional information concerning the Online Services, including the following: (a) access to Microsoft personnel for raising questions and escalations relating to Online Services, including for support in risk assessments, (b) invitation to
+           participate in a webcast hosted by Microsoft to discuss audit results and subsequent access to detailed information regarding planned remediation of any deficiencies identified by the audit, (c) access to Microsoft’s subject matter experts through group events such as webcasts or in-person meetings (including an annual summit event) where roadmaps of planned developments or reports of significant events will be discussed and you will have a chance to provide structured feedback and/or suggestions regarding the Compliance Program for the Microsoft Cloud and its desired future evolution. The group events will also give you the opportunity to discuss common issues with other regulated financial institutions and raise them with Microsoft.
+           
+           
+        4. Does the service
+       provider provide you
+       with audit rights, including: (a) the
+       right to evaluate the services provided or, alternatively to cause an independent
+       
+       Yes.
+       OSFI B-10 Guidelines, Section 7.2.1(h)
+       The template response below explains how certain features of Microsoft cloud services can make monitoring easier for you. In addition, you may sign up for Premier Support, in which a designated Technical Account
+       Manager serves as a point of contact for day-to-day management of the Microsoft cloud services and your overall relationship with Microsoft.
+       auditor to evaluate, on your behalf, the services provided; and (b) a review
+       of the Service Provider’s internal
+       control environment as it relates to
+       the services
+       being provided? (continued)
+       Customers have the right: (a) to evaluate the services provided; and (b) to review Microsoft’s internal control
+       environment as it relates to the services provided. Microsoft provides access to “service health” dashboards (Office 365 Service Health Dashboard and Azure Status Dashboard) providing real-time and continuous updates on the
+       status of Microsoft’s Online Services. This provides our IT administrators with information about the current availability of each service or tool (and history of availability status), details about service disruption or outage and scheduled
+       maintenance times. The information is provided online and via an RSS feed.
+       As part of its certification requirements, Microsoft is required to undergo independent third-party auditing, and
+       it shares with the customer the independent third party audit reports. Microsoft also makes available a wealth of resources online to provide transparency and assurance to customers in the Microsoft Compliance dashboard.
+       
+       35 | Key Considerations | Compliance Within Your Organisation
+       Continued Next Page »
+       Back to Contents
+
+       
+       
+        5. Does the service
+           provider provide you
+           with audit rights, including: (a) the
+           right to evaluate the services provided or, alternatively to cause an independent
+           auditor to evaluate, on your behalf, the services provided; and (b) a review
+           of the Service Provider’s internal
+           control environment as it relates to the
+           services being provided?
+           The Microsoft Financial Services Amendment provides for rights of audit, and additional customer benefits, including
+            1. access to community events organized by Microsoft related to updates to the Online Services, Microsoft responses to regulator changes, and to provide additional feedback to Microsoft for further development of the Online Services;
+            2. submit a written request to meet with Microsoft’s external auditors; (c) receive from Microsoft written responses to updated regulator guidance; (d) receive responses from Microsoft about Microsoft responses and changes to
+services based on regulatory changes; (e) access Microsoft personnel for raising questions and escalations relating to Microsoft cloud services; (f ) receive communication from Microsoft on (1) the nature, common causes, and resolutions of security incidents and other circumstances that can reasonably be expected to have a material service impact on
+the customer’s use of Microsoft cloud services, (2) Microsoft’s risk-threat evaluations, and (3) significant changes to Microsoft’s business resumption and contingency plans or other circumstances that might have a serious impact on
+the customer’s use of Microsoft cloud services, and (g) receive access to a summary report of the results of Microsoft’s third party penetration testing against Microsoft cloud services (e.g. evidence of data isolation among tenants in the multi-tenanted services).
+
+Continued Next Page »
+
+
+    1. Does the service provider provide
+       regulatory bodies with audit rights, including: (a)
+       exercise your
+       contractual rights relating to audits;
+        1. accompany you when exercising your audit rights;
+        2. access and make copies of any internal audit reports; and (d) access findings in the external audit of the Service Provider?
+           OSFI B-10 Guidelines, Section 7.2.1(h).
+           Microsoft permits any necessary examination or monitoring required to occur at Microsoft’s offices or at other locations where activities relating to the Online Services are performed. The customer will also have the right to elect its auditor to undertake any such visit if necessary under these provisions. The Financial Services Amendment enables customers to comply with their regulatory obligations through direct access to business premises, to information, Microsoft
+           personnel and Microsoft’s external auditor.
+           Additionally, and also as set out in the Financial Services Amendment, a financial institution may disclose Audit Reports to its regulator, subject to redacting terms that are unrelated to regulatory oversight and approval, including pricing
+           information and order quantities.
+           
+           
+    2. Does the financial institution have
+access to adequate, independent
+information in order to appropriately
+monitor the cloud
+service provider and the effectiveness of its controls?
+(continued)
+All customers and potential customers have access to information for monitoring the effectiveness of Microsoft’s controls, including through the following online sources:
+    • Microsoft Compliance, which offers a comprehensive set of compliance offerings as well as resources to gain an understanding of Microsoft security and privacy practices;
+    • the Service Trust Portal, which provides confidential materials, such as third-party audit reports and vulnerability assessment reports, to current customers and potential customers testing Microsoft Online Services;
+    • Compliance Manager, which provides detailed third party audit results enabling self-service audit and due diligence;
+      
+      Continued Next Page »
+      
+      
+        1. Does the financial institution have
+           access to adequate, independent
+           information in order to appropriately
+           monitor the cloud
+           service provider and the effectiveness of its controls?
+    • a publicly available Trust Center for Microsoft Online Services that includes non-confidential compliance information;
+    • a Compliance Program for the Microsoft Cloud or a successor program, as updated from time to time, which provides access to engineers with subject matter expertise concerning underlying controls of the Online
+      Services;
+    • the Azure Security Center and Office 365 Advanced Threat Analytics, which enable customers to seamlessly obtain cybersecurity-related information about Online Services deployments;
+    • Office 365 Secure Score, which provides insight into the strength of customers’ Office 365 deployment based on the customer’s configuration settings compared with recommendations from Microsoft, and Azure Advisor,
+      which enables customers to optimize their Azure resources for high availability, security, performance, and cost;
+    • the Office 365 Service Health Dashboard and Azure Status Dashboard, which broadcast real-time information regarding the status of Microsoft Online Services; and
+    • Office 365 Advanced Threat Protection and the Azure Web Application Firewall, which protect customer
+email in real-time from cyberattacks and provide customers with information security protections and analytics information.
+
+
+D. SUBCONTRACTORS
+
+
+    1. Does the Service Provider use
+       subcontractors?
+       OSFI B-10 Guidelines, Section 7.2.1(i)
+       In the agreement with Microsoft the use of subcontractors is permitted
+       
+    2. Do the security
+       and confidentiality
+       standards set out
+       in the outsourcing agreement apply to all subcontracts?
+       Do the audit and inspection rights (for both you and
+       the regulator) apply to all “significant”
+       subcontracts?
+       OSFI B-10 Guidelines, Section 7.2.1(i)
+       Microsoft commits that its subcontractors are bound by written agreements that require them to provide at least the
+       level of data protection required of Microsoft by the Data Protection Addendum, including the limitations on disclosure of Processed Data. Microsoft remains responsible for its subcontractors’ compliance with Microsoft’s obligations in
+       the Product Terms. To ensure subcontractor accountability, Microsoft requires all of its vendors that handle customer personal information to join the Microsoft Supplier Security and Privacy Assurance Program, which is an initiative
+       designed to standardize and strengthen the handling of customer personal information, and to bring vendor business processes and systems into compliance with those of Microsoft. For more information regarding Microsoft’s Supplier Security and Privacy Program, see https://www.microsoft.com/en- us/procurement/msp-requirements.aspx.
+       Microsoft will enter into a written agreement with any subcontractor that is no less protective than the data protection required of Microsoft by the Data Protection Addendum. In addition, Microsoft’s ISO/IEC 27018 certification requires Microsoft to ensure that its subcontractors are subject to the same security controls as Microsoft. Microsoft’s ISO 27001 certification provides a layer of additional controls that impose stringent requirements on Microsoft’s subcontractors to comply fully with Microsoft’s privacy, security, and other commitments to its customers, including requirements for handling sensitive data, background checks, and non-disclosure agreements.
+       Microsoft commits that Regulator and Customer rights of audit will include, as necessary, the audit of sub-contractors that perform and process operations of the Online Services.
+       
+       
+
+    3. Please provide a list of any
+       subcontractors
+       used by the Service Provider and
+       confirm that: (a) the Service Provider has controls in place
+       to ensure that its subcontractors
+       agree to equivalent commitments to
+       those that the Service Provider
+       agrees to; and (b) the agreement
+       requires the Service Provider to take
+       overall responsibility for the performance of subcontractors.
+       Microsoft provides a website that lists subcontractors authorized to access customer data in the Online Services as well as the limited or ancillary services they provide. At least 6 months before authorizing any new subcontractor to access Customer Data, Microsoft will update the website and provide the customer with a mechanism to obtain notice of that update. If the customer does not approve of a new subcontractor, then the customer may terminate the affected Online Service without penalty by providing, before the end of the notice period, written notice of
+       termination that includes an explanation of the grounds for non-approval.
+       Microsoft remains responsible for its subcontractors’ compliance with Microsoft’s obligations in the Product Terms. To ensure subcontractor accountability, Microsoft requires all of its vendors that handle customer personal information to join the Microsoft Supplier Security and Privacy Assurance Program, which is an initiative designed to standardize and strengthen the handling of customer personal information, and to bring vendor business processes and systems into compliance with those of Microsoft. For more information regarding Microsoft’s Supplier Security and Privacy Program, see https://www.microsoft.com/en- us/procurement/msp-requirements.aspx.
+       Microsoft will enter into a written agreement with any subcontractor that is no less protective than the data
+       protection required of Microsoft by the Data Protection Addendum. In addition, Microsoft’s ISO/IEC 27018 certification requires Microsoft to ensure that its subcontractors are subject to the same security controls as Microsoft. Microsoft’s
+       ISO 27001 certification provides a layer of additional controls that impose stringent requirements on Microsoft’s
+       subcontractors to comply fully with Microsoft’s privacy, security, and other commitments to its customers, including requirements for handling sensitive data, background checks, and non-disclosure agreements.
+       
+       
+       E. TECHNICAL AND OPERATIONAL RISK Q&A
+       This section provides some more detailed technical and operational information about Microsoft cloud services which should address many of the technical and operational questions that may arise. If other questions arise, please do not hesitate to get in touch with your Microsoft contact.
+       
+    4. Have you obtained from the service
+provider a written undertaking to
+protect and maintain the confiden-tiality
+of your sensitive data?
+(continued)
+OSFI B-10 Guidelines, Section 7.2.1(j)
+“Confidentiality agreements and non-disclosure agreements” are covered under the ISO/IEC 27001 standard against which Microsoft is certified.
+MBSA Section 3 deals with confidentiality. Under this section Microsoft commits not to disclose your confidential
+information (which includes your data) to third parties and to only use your confidential information for the purposes of Microsoft’s business relationship with you. Further, Microsoft commits to take reasonable steps to protect your
+confidential information, to notify you if there is any unauthorized use or disclosure of your confidential information
+and to cooperate with you to help to regain control of your confidential information and prevent further unauthorized use or disclosure of it.
+The Data Protection Addendum states that Microsoft and the customer each commit to comply with all applicable privacy and data protection laws and regulations. The customer owns its data that is stored on Microsoft cloud
+services at all times. The customer also retains the ability to access its customer data at all times, and Microsoft will deal with customer data in accordance with the terms and conditions of the Enrollment and the Data Protection Addendum.
+Microsoft makes specific commitments with respect to safeguarding your data in the Data Protection Addendum. In summary, Microsoft commits that:
+    1. Your data will only be used to provide the products and services to you and for limited business operations
+       incident to provide the products and services to the customer (related details are set out in the Data Protection Addendum).
+       
+       Continued Next Page »
+       
+       41 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+       
+       
+       29 Have you obtained from the service
+       provider a written undertaking to
+       protect and maintain the confiden-tiality
+       of your sensitive data?
+    2. When providing products and services, we will not use or otherwise process your data for user profiling,
+       advertising or similar commercial purposes, or market research aimed at creating new functionalities, services, or products
+    3. Microsoft will not disclose your data to law enforcement unless it is legally obliged to do so, and only after not being able to redirect the request to you.
+    4. Microsoft will implement and maintain appropriate technical and organizational measures, internal controls, and information security routines intended to protect your data against accidental, unauthorized or unlawful access, disclosure, alteration, loss, or destruction. Technical support personnel are only permitted to have access to
+customer information when needed.
+
+
+30 Is the service
+provider able to
+isolate and clearly identify your
+sensitive data (e.g. customer
+data, documents, records and assets) to protect their
+confidentiality?
+Please explain how your sensitive data can be isolated and identified.
+OSFI B-10 Guidelines, Section 7.2.1(j)
+For all of its Online Services, Microsoft logically isolates customer data from the other data Microsoft holds. Data
+storage and processing for each tenant is segregated through an “Active Directory” structure, which isolates customers using security boundaries (“silos”). The silos safeguard the customer’s data such that the data cannot be accessed or compromised by co-tenants. Microsoft further describes its practice of logical isolation of data here.
+
+42 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+
+31 Are the provider’s services subject to
+any third party audit and do they agree to make the results of any such audit available to you
+and to regulatory bodies?
+OSFI B-10 Guidelines, Section 7.2.1(h)
+As part of its certification requirements, Microsoft is required to undergo independent third-party auditing, and
+it shares with the customer the independent third party audit reports. Microsoft also makes available a wealth of resources online to provide transparency and assurance to customers in the Microsoft Compliance dashboard.
+The Microsoft Financial Services Amendment provides for rights of audit, and additional customer benefits, including
+(a) access to community events organized by Microsoft related to updates to the Online Services, Microsoft responses to regulator changes, and to provide additional feedback to Microsoft for further development of the Online Services;
+(b) submit a written request to meet with Microsoft’s external auditors; (c) receive from Microsoft written responses to updated regulator guidance; (d) receive responses from Microsoft about Microsoft responses and changes to services based on regulatory changes; (e) access Microsoft personnel for raising questions and escalations relating to Microsoft cloud services; (f ) receive communication from Microsoft on (1) the nature, common causes, and resolutions of
+security incidents and other circumstances that can reasonably be expected to have a material service impact on
+the customer’s use of Microsoft cloud services, (2) Microsoft’s risk-threat evaluations, and (3) significant changes to Microsoft’s business resumption and contingency plans or other circumstances that might have a serious impact on
+the customer’s use of Microsoft cloud services, and (g) receive access to a summary report of the results of Microsoft’s third party penetration testing against Microsoft cloud services (e.g. evidence of data isolation among tenants in the multi-tenanted services.
+
+43 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+
+32 What security controls are in
+place to protect the transmission and storage of confidential
+information such as customer
+data within the
+infrastructure of the service provider?
+How does your
+organization protect your networks and
+systems from the potential threats arising from the
+system connectivity? (continued)
+You also need to demonstrate that you protect your networks and systems from the potential threats
+arising from the system connectivity. We have made suggestions regarding measures taken below and you will need to expand on our guidance to describe any further measures taken by your organization.
+The Microsoft cloud services security features consist of three parts: (a) built-in security features; (b) security controls; and (c) scalable security. These include 24-hour monitored physical hardware, isolated customer data, automated
+operations and lock- box processes, secure networks and encrypted data.
+Microsoft implements the Microsoft Security Development Lifecycle (SDL) which is a comprehensive security process that informs every stage of design, development and deployment of Microsoft cloud services. Through design
+requirements, analysis of attack surface and threat modelling, the SDL helps Microsoft predict, identify and mitigate vulnerabilities and threats from before a service is launched through its entire production lifecycle.
+Networks within Microsoft’s datacentres are segmented to provide physical separation of critical back-end servers
+and storage devices from the public-facing interfaces. Edge router security allows the ability to detect intrusions and signs of vulnerability. Customer access to services provided over the Internet originates from users’ Internet-enabled
+locations and ends at a Microsoft datacentre. These connections are encrypted using industry-standard transport layer security TLS. The use of TLS establishes a highly secure client-to-server connection to help provide data confidentiality and integrity between the desktop and the datacentre. Customers can configure TLS between Microsoft cloud
+services and external servers for both inbound and outbound email. This feature is enabled by default.
+Microsoft also implements traffic throttling to prevent denial-of-service attacks. It uses the “prevent, detect and
+mitigate breach” process as a defensive strategy to predict and prevent security breaches before they happen. This
+involves continuous improvements to built-in security features, including port-scanning and remediation, perimeter vulnerability scanning, OS patching to the latest updated security software, network-level DDOS detection and
+prevention and multi-factor authentication for service access. Use of a strong password is enforced as mandatory, and the password must be changed on a regular basis. From a people and process standpoint, preventing breach involves auditing all operator/administrator access and actions, zero standing permission for administrators in the service,
+“Just-In-Time (JIT) access and elevation” (that is, elevation is granted on an as-needed and only-at-the-time-of-need basis) of engineer privileges to troubleshoot the service, and isolation of the employee email environment from the
+
+Continued Next Page »
+
+44 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+
+‌32 What security controls are in
+place to protect the transmission and storage of confidential
+information such as customer
+data within the
+infrastructure of the service provider?
+How does your
+organization protect your networks and
+systems from the potential threats arising from the
+system connectivity?
+production access environment. Employees who have not passed background checks are automatically rejected
+from high privilege access, and checking employee backgrounds is a highly scrutinized, manual- approval process. Preventing breach also involves automatically deleting unnecessary accounts when an employee leaves, changes groups, or does not use the account prior to its expiration.
+Data is also encrypted. Customer data in Microsoft cloud services exists in two states:
+    • at rest on storage media; and
+    • in transit from a datacentre over a network to a customer device.
+      Microsoft offers a range of built-in encryption capabilities to help protect data at rest.
+    • For Office 365, Microsoft follows industry cryptographic standards such as TLS/SSL and AES to protect the confidentiality and integrity of customer data. For data in transit, all customer-facing servers negotiate a
+      secure session by using TLS/SSL with client machines to secure the customer data. For data at rest, Office 365 deploys BitLocker with AES 256-bit encryption on servers that hold all messaging data, including email and IM conversations, as well as content stored in SharePoint Online and OneDrive for Business. Additionally, in some scenarios, Microsoft uses file- level encryption.
+    • For Azure, technological safeguards such as encrypted communications and operational processes help keep customers’ data secure. Microsoft also provides customers the flexibility to implement additional encryption and manage their own keys. For data in transit, Azure uses industry-standard secure transport protocols, such as TLS/SSL, between user devices and Microsoft datacentres. For data at rest, Azure offers many encryption
+options, such as support for AES-256, giving customers the flexibility to choose the data storage scenario that best meets the customer’s needs.
+Such policies and procedures are available through Microsoft’s online resources, including Microsoft Compliance, the Trust Center and the Service Trust Platform.
+
+45 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+
+
+33 How are customers authenticated?
+Microsoft cloud services use two-factor authentication to enhance security. Typical authentication practices that
+require only a password to access resources may not provide the appropriate level of protection for information that is sensitive or vulnerable. Two-factor authentication is an authentication method that applies a stronger means of
+identifying the user. The Microsoft phone-based two-factor authentication solution allows users to receive their PINs sent as messages to their phones, and then they enter their PINs as a second password to log on to their services.
+Authentication is done via Azure Active Directory. Authorization may be done via role-based access controls (“RBAC”) or Key Vault access policy. RBAC is an access management tool that allows the cloud customer to manage who has
+access to Azure resources, what those with access can do with those resources, and what areas they have access to.
+RBAC enables the cloud customer to create role assignments and define each of those assignments with differing
+levels of access and control. It is used when dealing with the management of the vaults and Key Vault access policy is used when attempting to access data stored in a vault.
+
+
+34 What are the
+procedures for
+identifying,
+reporting and responding to
+suspected security incidents and
+violations? (continued)
+OSFI B-10 Guidelines, Section 7.2.1(j)
+First, there are robust procedures offered by Microsoft that enable the prevention of security incidents and violations arising in the first place and detection if they do occur. Specifically:
+    1. Microsoft implements 24 hour monitored physical hardware. Datacentre access is restricted 24 hours per day by job function so that only essential personnel have access to customer applications and services. Physical access
+       control uses multiple authentication and security processes, including badges and smart cards, biometric scanners, on-premises security officers, continuous video surveillance, and two-factor authentication.
+    2. Microsoft implements “prevent, detect, and mitigate breach”, which is a defensive strategy aimed at predicting and preventing a security breach before it happens. This involves continuous improvements to built-in security features, including port scanning and remediation, perimeter vulnerability scanning, OS patching to the latest updated security software, network-level DDOS (distributed denial-of-service) detection and prevention, and multi-factor authentication for service access. In addition, Microsoft has anti-malware controls to help avoid
+       malicious software from gaining unauthorized access to customer data. Microsoft implements traffic throttling to prevent denial-of-service attacks, and maintains a set of Security Rules for managed code to help ensure that application cybersecurity threats are detected and mitigated before the code is deployed.
+       
+       Continued Next Page »
+       
+       46 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+       
+       34 What are the
+       procedures for
+       identifying,
+       reporting and responding to
+       suspected security incidents and
+       violations? (continued)
+    3. Microsoft employs some of the world’s top experts in cybersecurity, cloud compliance, and financial services
+       regulation. Its Digital Crimes Unit, for example, employs cyber experts, many of whom previously worked for law enforcement, to use the most advanced tools to detect, protect, and respond to cybercriminals. Its Cyber Defense Operations Center brings together security response experts from across Microsoft to help protect, detect,
+       and respond 24/7 to security threats against Microsoft’s infrastructure and Online Services in real-time. General information on cybersecurity can be found here.
+    4. Microsoft conducts a risk assessment for the Online Services at least annually to identify internal and external
+       threats and associated vulnerabilities in their respective environments. Information is gathered from numerous data sources within Microsoft through interviews, workshops, documentation review, and analysis of empirical data. The assessment follows a documented process to produce consistent, valid, and comparable results year over year.
+    5. Wherever possible, human intervention is replaced by an automated, tool-based process, including routine functions such as deployment, debugging, diagnostic collection, and restarting services. Microsoft continues to invest in
+       systems automation that helps identify abnormal and suspicious behaviour and respond quickly to mitigate security risk. Microsoft is continuously developing a highly effective system of automated patch deployment that generates and deploys solutions to problems identified by the monitoring systems—all without human intervention. This
+       greatly enhances the security and agility of the service.
+    6. Microsoft allows customers to monitor security threats on their server by providing access to the Azure Security
+       Center, Office 365 Advanced Threat Analytics, Azure Status Dashboard, and the Office 365 Service Health Dashboard, among other online resources.
+    7. Microsoft maintains 24-hour monitoring of its Online Services and records all security breaches. For security breaches resulting in unlawful or unauthorized access to Microsoft’s equipment, facilities, or customer data, Microsoft notifies affected parties without unreasonable delay. Microsoft conducts a thorough review of all information security
+       incidents.
+    8. Microsoft conducts penetration tests to enable continuous improvement of incident response procedures. These
+internal tests help Microsoft cloud services security experts create a methodical, repeatable, and optimized stepwise
+
+Continued Next Page »
+
+47 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+
+34 What are the
+procedures for
+identifying, reporting and responding to
+suspected security incidents and
+violations? (continued)
+response process and automation. In addition, Microsoft provides customers with the ability to conduct their own penetration testing of the services. This is done in accordance with Microsoft’s rules of engagement, which do not require Microsoft’s permission in advance of such testing.
+Second, if a security incident is detected, Microsoft Customer Service and Support notifies customers by updating
+the Service Health Dashboard. Customers would have access to Microsoft’s dedicated support staff, who have a deep knowledge of the service. Microsoft provides Recovery Time Objective (RTO) commitments. These differ depending on the applicable Microsoft service and are outlined further below.
+Finally, after the incident, Microsoft provides a thorough post-incident review report (PIR). The PIR includes:
+    • An incident summary and event timeline.
+    • Broad customer impact and root cause analysis.
+    • Actions being taken for continuous improvement.
+      If the customer is affected by a service incident, Microsoft shares the post-incident review with them.
+      Microsoft’s commitment to cybersecurity and data privacy, including restrictions on access to customer data, are set forth in Microsoft’s contracts with customers. In summary:
+    • Logical Isolation. Microsoft logically isolates customer data from the other data Microsoft holds. This isolation safeguards customers’ data such that the data cannot be accessed or compromised by co-tenants.
+    • 24-Hour Monitoring & Review of Information Security Incidents. Microsoft maintains 24-hour monitoring of its Online Services and records all security breaches. Microsoft conducts a thorough review of all information security incidents. For security incidents (defined as a breach of security leading to the accidental or unlawful
+      destruction, loss, alteration, unauthorized disclosure of, or access to Customer Data, Professional Services Data, or Personal Data while processed by Microsoft), Microsoft notifies affected parties without unreasonable delay. For more information regarding Microsoft’s security incident management, refer to https://docs.microsoft.
+      com/en-us/compliance/assurance/assurance-security-incident-management.
+      
+      Continued Next Page »
+      
+      48 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+      
+      34 What are the
+      procedures for
+      identifying, reporting and responding to
+      suspected security incidents and
+      violations?
+    • Minimizing Service Disruptions—Redundancy. Microsoft makes every effort to minimize service disruptions, including by implementing physical redundancies at the disk, Network Interface Card (“NIC”), power supply,
+      and server levels; constant content replication; robust backup, restoration, and failover capabilities; and real-
+      time issue detection and automated response such that workloads can be moved off any failing infrastructure components with no perceptible impact on the service.
+    • Resiliency. Microsoft Online Services offer active load balancing, automated failover and human backup, and recovery testing across failure domains.
+    • Distributed Services. Microsoft offers distributed component services to limit the scope and impact of any failures of a single component, and directory data is replicated across component services to insulate one service from another in the event of a failure.
+    • Simplification. Microsoft uses standardized hardware to reduce issue isolation complexities. Microsoft also uses fully automated deployment models and a standard built-in management mechanism.
+
+    • Human Backup. Microsoft Online Services include automated recovery actions with 24/7 on-call support; a team with diverse skills on call to provide rapid response and resolution; and continuous improvement through learning from the on-call teams.
+    • Disaster Recovery Tests. Microsoft conducts disaster recovery tests at least once per year.
+49 | Key Considerations | Technical and Operational Risk Q&A
+Back to Contents
+
+
+35 How is end-to- end application
+encryption security implemented to
+protect PINs and
+other sensitive data
+transmitted between terminals and hosts? (continued)
+There are three key aspects to Microsoft’s encryption:
+    1. Secure identity: Identity (of a user, computer, or both) is a key element in many encryption technologies. For
+       example, in public key (asymmetric) cryptography, a key pair—consisting of a public and a private key—is issued to each user. Because only the owner of the key pair has access to the private key, the use of that key identifies the associated owner as a party to the encryption/decryption process. Microsoft Public Key Infrastructure is based on certificates that verify the identity of users and computers.
+    2. Secure infrastructure: Microsoft uses multiple encryption methods, protocols, and algorithms across its products and services to help provide a secure path for data to travel through the infrastructure, and to help protect the
+       confidentiality of data that is stored within the infrastructure. Microsoft uses some of the strongest, most secure encryption protocols in the industry to provide a barrier against unauthorized access to our data. Proper key
+       management is an essential element in encryption best practices, and Microsoft helps ensure that encryption keys are properly secured. Protocols and technologies examples include:
+        1. Transport Layer Security (TLS), which uses symmetric cryptography based on a shared secret to encrypt communications as they travel over the network.
+        2. Internet Protocol Security (IPsec), an industry-standard set of protocols used to provide authentication, integrity, and confidentiality of data at the IP packet level as it’s transferred across the network.
+        3. Office 365 servers using BitLocker to encrypt the disk drives containing log files and customer data at rest at the volume-level. BitLocker encryption is a data protection feature built into Windows to safeguard against
+           threats caused by lapses in controls (e.g., access control or recycling of hardware) that could lead to someone gaining physical access to disks containing customer data.
+        4. BitLocker deployed with Advanced Encryption Standard (AES) 256-bit encryption on disks containing
+           customer data in Exchange Online, SharePoint Online, and Skype for Business. Advanced Encryption Standard (AES)-256 is the National Institute of Standards and Technology (NIST) specification for a symmetric key data encryption that was adopted by the US government to replace Data Encryption Standard (DES) and RSA 2048 public key encryption technology.
+           
+           Continued Next Page »
+           
+           50 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+           
+           
+           35 How is end-to- end application
+           encryption security implemented to
+           protect PINs and
+           other sensitive data
+           transmitted between terminals and hosts?
+        5. BitLocker encryption that uses AES to encrypt entire volumes on Windows server and client machines, which can be used to encrypt Hyper-V virtual machines when a virtual Trusted Platform Module (TPM) is added.
+           BitLocker also encrypts Shielded VMs in Windows Server 2016, to ensure that fabric administrators cannot access the information inside the virtual machine. The Shielded VMs solution includes the Host Guardian Service feature, which is used for virtualization host attestation and encryption key release.
+    3. Secure apps and data: Information concerning security and encryption of Microsoft cloud services may be found at microsoft.com/en-us/trustcenter/security/encryption. Further information concerning Microsoft controls
+and applicable SOC audit reports and the online services for which they are available may be found at: Service Organization Controls (SOC) - Microsoft Compliance | Microsoft Docs.
+
+
+36 Are there procedures established to
+securely destroy or remove the data
+when the need
+arises (for example, when the contract terminates)?
+OSFI B-10 Guidelines, Section 7.2.1(g)
+Yes. Microsoft uses best practice procedures and a wiping solution that is NIST 800-88, ISO/IEC 27001, ISO/IEC 27018, SOC1 and SOC2 compliant. For hard drives that cannot be wiped it uses a destruction process that destroys it (i.e.,
+shredding) and renders the recovery of information impossible (e.g., disintegrate, shred, pulverize, or incinerate). The appropriate means of disposal is determined by the asset type. Records of the destruction are retained. Information regarding SOC reports and the online services for which they are available is located here: Service Organization 
+Controls (SOC) - Microsoft Compliance | Microsoft Docs. Audit reports for Microsoft services are available here: MSComplianceGuideV3 (microsoft.com)
+All Microsoft online services utilize approved media storage and disposal management services. Paper documents
+are destroyed by approved means at the pre-determined end-of-life cycle. In its contracts with customers, Microsoft commits to disabling a customer’s account and deleting customer data from the account no more than 180 days after the expiration or termination of the Online Service.
+“Secure disposal or re-use of equipment and disposal of media” is covered under the ISO/IEC 27001 standards against which Microsoft is certified.
+
+51 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+
+
+    1. Are there
+       documented
+       security procedures for safeguarding
+       premises and
+       restricted areas?
+       If yes, provide
+       descriptions of these procedures.
+       Microsoft implements 24 hour monitored physical hardware. Datacentre access is restricted 24 hours per day by job function so that only essential personnel have access to customer applications and services. Physical access control uses multiple authentication and security processes, including badges and smart cards, biometric scanners, on-
+       premises security officers, continuous video surveillance, and two-factor authentication.
+       
+       
+    2. Are there
+       documented
+       security procedures for safeguarding
+       hardware, software and data in the
+       datacentre?
+       Yes. These are described at length in the Microsoft Trust Center at microsoft.com/trust. For information on:
+        ◦ design and operational security see https://www.microsoft.com/en-us/security/business/operations
+        ◦ network security see https://www.microsoft.com/en-us/security/business/operations
+        ◦ encryption see https://www.microsoft.com/en-us/security/business/operations
+        ◦ threat management see https://www.microsoft.com/en-us/security/business/operations
+        ◦ identify and access management see https://www.microsoft.com/en-us/trustcenter/security/identity
+       
+       52 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+       
+       
+    3. Does the service provider have
+       privileged access or remote access
+       to perform system/ user administration for the outsourced service? If so, does
+       the service provider have access to
+       your organization’s
+       sensitive data? Please provide details
+       on the controls implemented to
+       mitigate the risks of unauthorized access to sensitive data by the service provider, or other parties.
+       Yes. For certain core services of Office 365 and Azure, personnel (including employees and subcontractors) with access to customer data content are subject to background screening, security training, and access approvals as allowed by applicable law. Background screening takes place before Microsoft authorises the employee to access customer data. To the extent permitted by law, any criminal history involving dishonesty, breach of trust, money
+       laundering, or job- related material misrepresentation, falsification, or omission of fact may disqualify a candidate
+       from employment, or, if the individual has commenced employment, may result in termination of employment at a
+       later day. Authorization may also be done via role-based access controls (“RBAC”) or through Key Vault access policy. RBAC is an access management tool that allows the cloud customer to manage who has access to Azure resoruces,
+       what those with access can do with those resources, and what areas they have access to. RBAC enables the customer to create role assignments and define each of those assignments with differing levels of access and control. The
+       customer may also secure its Azure management ports with just-in-time access controls that reduce exposure to cyber-attacks.
+       Microsoft provides monitoring and logging technologies to give its customers maximum visibility into the activity on their cloud-based network, applications, and devices, so they can identify potential security gaps. The Online Services contain features that enable customers to restrict and monitor their employees’ access to the services, including the Azure AD Privileged Identify Management system and Multi-Factor Authentication.
+       In addition, the Online Services include built-in approved Windows PowerShell Scripts, which minimise the access rights needed and the surface area available for misconfiguration.
+       
+    4. Are the activities of privileged accounts
+       captured (e.g. system audit logs) and
+       reviewed regularly? Indicate the party reviewing the logs and the review
+       frequency.
+       Microsoft logs, or enables customers to log, access and use of information systems containing customer data, registering the access ID, time, authorization granted or denied, and relevant activity. An internal, independent
+       Microsoft team audits the log at least once per quarter, and customers have access to such audit logs. In addition, Microsoft periodically reviews access levels to ensure that only users with appropriate business justification have access to appropriate systems.
+       
+       53 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+       
+       
+    5. Are the audit/activity logs protected
+       against tampering by users with privileged accounts? Describe
+       the safeguards implemented
+       Yes. Microsoft logs, or enables customers to log, access and use of information systems containing customer data, registering the access ID, time, authorization granted or denied, and relevant activity. An internal, independent Microsoft team audits the log at least once per quarter, and customers have access to such audit logs. In addition, Microsoft periodically reviews access levels to ensure that only users with appropriate business justification have access to appropriate systems.
+       
+       
+    6. Are password controls for the
+       outsourced systems and applications
+       reviewed for
+       compliance on a regular basis?
+       Yes. All access to production and customer data require multi-factor authentication. Use of strong password is
+       enforced as mandatory and password must be changed on a regular basis. Microsoft cloud services use two-factor
+       authentication to enhance security. Typical authentication practices that require only a password to access resources may not provide the appropriate level of protection for information that is sensitive or vulnerable. Two-factor
+       authentication is an authentication method that applies a stronger means of identifying the user. The Microsoft
+       phone-based two-factor authentication solution allows users to receive their PINs sent as messages to their phones, and then they enter their PINs as a second password to log on to their services. Authentication is done via Azure
+       Active Directory. Authorization may be done via role-based access controls (“RBAC”) or Key Vault access policy. RBAC is an access management tool that allows the cloud customer to manage who has access to Azure resources, what
+       those with access can do with those resources, and what areas they have access to. RBAC enables the cloud customer to create role assignments and define each of those assignments with differing levels of access and control. It is used when dealing with the management of the vaults and Key Vault access policy is used when attempting to access data stored in a vault.
+       
+       54 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+       
+       
+    7. Are access rights for the outsourced
+       systems and applications reviewed for
+       compliance on a regular basis?
+       Microsoft applies strict controls over access to customer data. Authorization may be done via role-based access controls (“RBAC”) or through Key Vault access policy. RBAC is an access management tool that allows the cloud customer to manage who has access to Azure resources, what those with access can do with those resources, and what areas they have access to. RBAC enables the customer to create role assignments and define each of those
+       assignments with differing levels of access and control. In addition, the access levels are reviewed on a periodic basis to ensure that only users who have appropriate business justification have access to the systems. The Online Services also include built-in approved Windows PowerShell Scripts, which minimize the access rights needed and the surface area available for misconfiguration. For more information regarding Microsoft identity and access management, see https://www.microsoft.com/en-us/trustcenter/security/identity.
+       
+       
+    8. Does the service provider have a
+disaster recovery or business
+continuity plan and what is the service availability? For your organization’s data residing at
+the service
+provider, what are the backup and recovery
+arrangements? (continued)
+OSFI B-10 Guidelines, Sections 7.2.1(g) and 7.2.3.
+Microsoft conducts disaster recovery tests at least once per year. By way of background, Microsoft maintains physical redundancy at the server, datacentre, and service levels; data redundancy with robust failover capabilities; and
+functional redundancy with offline functionality. Microsoft’s redundant storage and its procedures for recovering
+data are designed to attempt to reconstruct customer data in its original or last-replicated state from before the time it was lost or destroyed.
+Microsoft maintains multiple live copies of data at all times. Live data is separated into “fault zones,” which ensure continuous access to data. For Office 365, Microsoft maintains multiple copies of customer data across datacentres for redundancy. For Azure, Microsoft may copy customer data between regions within a given geography for data
+redundancy or other operational purposes. For example, Azure Globally-Redundant Storage (“GRS”) replicates certain data between two regions within the same geography for enhanced data durability in case of a major datacentre
+disaster.
+To promote data resiliency, Microsoft Online Services offer active load balancing, automated failover and human
+backup, and recovery testing across failure domains as further described below. For example, Azure Traffic Manager provides load balancing between different regions, and the customer can use network virtual appliances in its Azure Virtual Networks for application delivery controllers (ADC/load balancing) functionality. Load balancing is also
+provided by Power BI Services, the Gateway, and Azure API Management roles. Office 365 services have been
+
+Continued Next Page »
+
+55 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+
+44 Does the service provider have a
+disaster recovery or business
+continuity plan and what is the service availability? For your organization’s data residing at
+the service
+provider, what are the backup and recovery
+arrangements? (continued)
+designed around specific resiliency principles that are designed to protect data from corruption, to separate data
+into different fault zones, to monitor data for failing any part of the ACID test, and to allow customers to recover on their own.
+Redundancy
+    • Physical redundancy at server, datacentre, and service levels.
+    • Data redundancy with robust failover capabilities.
+    • Functional redundancy with offline functionality.
+      Microsoft’s redundant storage and its procedures for recovering data are designed to attempt to reconstruct customer data in its original or last-replicated state from before the time it was lost or destroyed. Additionally,
+      Microsoft maintains multiple live copies of data at all times. Live data is separated into “fault zones”, which ensure continuous access to data. For Office 365, Microsoft maintains multiple copies of customer data across for
+      redundancy. For Azure, Microsoft may copy customer data between regions within a given geography for data
+      redundancy or other operational purposes. For example, Azure Globally-Redundant Storage replicates certain data between two regions within the same geography for enhanced data durability in case of a major datacentre disaster.
+      Resiliency
+    • Active/active load balancing.
+    • Automated failover with human backup.
+    • Recovery testing across failure domains.
+      For example, Azure Traffic Manager provides load balancing between different regions, and the customer can use network virtual appliances in its Azure Virtual Networks for application delivery controllers (ADC/load balancing)
+      functionality. Load balancing is also provided by Power BI Services, the Gateway, and Azure API Management roles.
+      
+      Continued Next Page »
+      
+      56 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+      
+      44 Does the service provider have a
+      disaster recovery or business
+      continuity plan and what is the service availability? For your organization’s data residing at
+      the service
+      provider, what are the backup and recovery
+      arrangements? (continued)
+      Office 365 services have been designed around specific resiliency principles that are designed to protect data from corruption, to separate data into different fault zones, to monitor data for failing any part of the ACID test, and to
+      allow customers to recover on their own. Distributed Services
+    • Distributed component services like Exchange Online, SharePoint Online, and Skype for Business Online
+      limit scope and impact of any failures in a component. Directory data replicated across component services insulates one service from another in any failure events.
+    • Simplified operations and deployment.
+      Monitoring
+    • Internal monitoring built to drive automatic recovery.
+    • Outside-in monitoring raises alerts about incidents.
+    • Extensive diagnostics provide logging, auditing, and granular tracing.
+      Simplification
+    • Standardized hardware reduces issue isolation complexities.
+    • Fully automated deployment models.
+    • Standard built-in management mechanism.
+      Human Backup
+    • Automated recovery actions with 24/7 on-call support.
+    • Team with diverse skills on the call provides rapid response and resolution.
+    • Continuous improvement by learning from the on-call teams.
+
+Continued Next Page »
+
+57 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+
+    1. Does the service provider have a
+       disaster recovery or business
+       continuity plan and what is the service availability? For your organization’s data residing at
+       the service
+       provider, what are the backup and recovery
+       arrangements?
+       Continuous Learning
+        ◦ If an incident occurs, Microsoft does a thorough post-incident review every time.
+        ◦ Microsoft’s post-incident review consists of analysis of what happened, Microsoft’s response, and Microsoft’s plan to prevent it in the future.
+        ◦ If the organization was affected by a service incident, Microsoft shares the post-incident review with the organization.
+       
+       58 | Key Considerations | Technical and Operational Risk Q&A
+       Back to Contents
+
+       
+    2. How frequently does the service
+       provider conduct disaster recovery tests?
+       OSFI B-10 Guidelines, Section 7.2.1(g)
+       Microsoft conducts disaster recovery tests at least once per year. By way of background, Microsoft maintains physical
+       redundancy at the server, datacentre, and service levels; data redundancy with robust failover capabilities; and functional redundancy with offline functionality. Microsoft’s redundant storage and its procedures for recovering data are designed to attempt to reconstruct customer data in its original or last-replicated state from before the time it was lost or
+       destroyed.
+       Microsoft maintains multiple live copies of data at all times. Live data is separated into “fault zones,” which ensure continuous access to data. For Office 365, Microsoft maintains multiple copies of customer data across datacentres for redundancy. For Azure, Microsoft may copy customer data between regions within a given geography for data
+       redundancy or other operational purposes. For example, Azure Globally-Redundant Storage (“GRS”) replicates certain
+       data between two regions within the same geography for enhanced data durability in case of a major datacentre disaster. To promote data resiliency, Microsoft Online Services offer active load balancing, automated failover and human backup,
+       
+       and recovery testing across failure domains as further described below. For example, Azure Traffic Manager provides load balancing between different regions, and the customer can use network virtual appliances in its Azure Virtual Networks for application delivery controllers (ADC/load balancing) functionality. Load balancing is also provided by
+       Power BI Services, the Gateway, and Azure API Management roles. Office 365 services have been designed around specific resiliency principles that are designed to protect data from corruption, to separate data into different fault zones, to
+       monitor data for failing any part of the ACID test, and to allow customers to recover on their own.
+       Continued Next Page »
+       59 | Key Considerations | Technical and Operational Risk Q&A
+       Back to Contents
+
+       
+    3. Will the service provider be
+       required to
+       notify you of the test results and address material
+       differences? Does the outsourcing
+       agreement
+       provide that the service provider will notify you of any significant
+       changes to the
+       service provider’s business
+       continuity plan or in the event the
+       service provider encounters
+       circumstances
+       that might have a serious impact on the services?
+       OSFI B-10 Guidelines, Section 7.2.1(g)
+       Under the Financial Services Amendment, customers are entitled to request to see copies of audit reports which will include details of the disaster recovery plans and tests. In addition, the customer may elect to participate in the Compliance Program for the Microsoft Cloud or a successor program, as updated from time to time. Through
+       participation, Microsoft will provide the customer with the ability to (a) assess the controls that apply to each Online Service and the effectiveness of those controls, (b) access data related to service operations, (c) maintain insight into operational risks of the services, (d) receive additional notification of changes that may materially impact Microsoft’s ability to provide the Online Services, (e) engage with Microsoft subject matter experts and external auditors, and (f ) provide suggestions to improve in the services.
+       
+       60 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+       
+       
+    4. Does the
+       outsourcing
+       agreement
+       stipulate that the
+       service provider will provide a summary of the test results to the regulator upon request?
+       OSFI B-10 Guidelines, Section 7.2.1(g)
+       Yes. Under the Financial Services Amendment, Microsoft gives the regulator the right to examine Microsoft’s online
+       services, including the right to access Microsoft’s premises. Under this examination right, the regulatory would be able to access a summary of the disaster recovery test results (and all other appropriate test results).
+       
+       
+    5. Does the service
+       provider’s business
+       continuity plan ensure that you have in your
+       possession, or can readily access, all
+       records necessary to allow you to sustain business operations, meet your statutory obligations,
+       and provide all
+       information as may be required by
+       regulators, in the event the service provider is unable to provide the
+       services?
+       OSFI B-10 Guidelines, Section 7.2.3
+       Yes. Microsoft has a disaster recovery plan in place. This plan aims to ensure that customers can readily access all records necessary to allow them to sustain business operations, meet their statutory obligations, and provide all information as may be required by regulators, in the event that Microsoft is unable to provide the services.
+       
+       61 | Key Considerations | Technical and Operational Risk Q&A Back to Contents
+
+       
+       F. EXIT STRATEGY
+       
+    6. Is there a
+       contingency plan
+       in the event of
+       the unexpected cessation of the Service Provider?
+       OSFI B-10 Guidelines, Section 7.2.1(e)
+       Financial institutions should put in place a contingency plan to address the possibility that its current service provider might not be able to continue operations or render the services required.
+       
+       
+    7. Do you have the right to terminate
+       the SLA in the
+       event of default, ownership
+       change,
+       insolvency, change of
+       security or serious deterioration of
+       service quality?
+       OSFI B-10 Guidelines, Section 7.2.1(e)
+       The SLA is only one part of the contractual arrangement with Microsoft. It is not terminable in itself as a stand-alone document (the remedies available to customers under the SLA are financial). The customer may terminate an Online Service at the express direction of a regulator with reasonable notice. Additionally, to ensure regulatory compliance,
+       Microsoft and the customer may contemplate adding additional products or services, or if these are unable to satisfy the customer’s new regulatory requirements, the customer may terminate the applicable Online Service without cause by
+       giving reasonable written notice of termination.
+       
+       62 | Key Considerations | Exit Strategy Back to Contents
+
+       
+       
+    8. Does the
+       outsourcing
+       agreement
+       
+       Yes.
+       OSFI B-10 Guidelines, Section 7.2.1(g)
+       provide that data and
+       records should be returned to you in a format that would
+       allow you to
+       sustain business operations
+       without
+       prohibitive expense?
+       Microsoft will retain customer data stored in the Online Service in a limited function account for 90 days after expiration or termination of the customer’s subscription so that the customer may extract the data. After the 90-day retention
+       period ends, Microsoft will disable the customer’s account and delete the customer data. Microsoft will disable the
+       account and delete customer data from the account no more than 180 days after expiration or termination of customer’s use of an Online Service.
+       This will allow customers to sustain business operations without prohibitive expense, including in the event that the
+       outsourcing contract is terminated or the Service Provider is unable to provide the service. Note that Microsoft does not change the format of the data.
+       
+    9. Does the
+outsourcing
+agreement contain any wording that precludes the service from
+being continued in situations
+where the
+regulator takes control of you, or where you are in liquidation?
+OSFI B-10 Guidelines, Section 7.2.1(g)
+There are no provisions in your contract with Microsoft that preclude the service from being continued in situations
+where OSFI takes control of the financial institution, or where the financial institution is in liquidation. Generally speaking, as long the customer complies with its obligations under the contract, Microsoft will continue to provide the services.
+There are very limited situations where Microsoft may suspend/terminate the services (as set out in the Product Terms). Microsoft will usually provide reasonable notice before suspending the services.
+
+63 | Key Considerations | Exit Strategy Back to Contents
+
+
+Part 2: Contract Checklist
+A. CONTRACTUAL REQUIREMENTS FOR MATERIAL OUTSOURCING ARRANGEMENTS WHAT ARE OUR CONTRACT DOCUMENTS?
+‌
+
+The following table sets out the relevant Microsoft documents:
+
+CORE MICROSOFT CONTRACT DOCUMENTS
+Microsoft Business and Services Agreement (MBSA);
+Enterprise Agreement (EA); and the enabling Enrollment, which is likely to be either an Enterprise Enrollment or a Server and Cloud Enrollment.	DOCUMENTS INCORPORATED IN MICROSOFT CONTRACTS1
+Product Terms;
+Data Protection Addendum (DPA); and
+Online Services Service Level Agreement (SLA).
+AMENDMENT PROVIDED BY MICROSOFT TO ADD TO CORE CONTRACT DOCUMENTS FOR FINANCIAL SERVICES CUSTOMERS
+Financial Services Amendment (FSA)	SUPPORTING DOCUMENTS AND INFORMATION THAT DO NOT FORM PART OF THE CONTRACT 2
+Materials available from the relevant Trust Center
+
+WHAT DOES THIS PART 2 COVER?
+This table sets out the specific items that may need to be covered in the financial institution’s outsourcing agreement with the service provider when the
+outsourcing arrangement is a material outsourcing, pursuant to the OSFI B-10 Guidelines. Most of the requirements are also found in the Checklist in Section 8 (above) but the specific items are extracted separately in this appendix.
+
+1 Available at www.microsoft.com/contracts.
+2 Available at www.microsoft.com/trustcenter. Continued Next Page »
+
+
+Part 2: Contract Checklist (continued)
+The OSFI B-10 Guidelines indicate that OSFI expects a financial institution to design a risk management program that applies to all of its outsourcing arrangements, with the risk mitigation employed to be commensurate with the risks associated with the particular outsourcing arrangement. However, only those outsourcing
+arrangements deemed “material” need to be documented by a written contract that addresses safeguards identified in the OSFI B-10 Guidelines. The assessment of the materiality of an outsourcing arrangement is the responsibility of each financial institution. Each assessment must take into account the specific circumstances of the institution and the nature of the services being outsourced.
+Microsoft recognizes that many elements of the OSFI Guidelines are not mandatory (in that they are identified as items that the FSI “should”, rather than “must”,
+address in its agreement with the service provider). However, Microsoft has included these elements in the table below for the sake of completeness and to highlight how Microsoft’s approach to delivering Online Services helps to address these elements.
+
+REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+
+    1. The outsourcing agreement is expected to specify:
+        1. the scope of the relationship
+           between the financial institution
+           and the service provider, including the frequency, content and format of the service being provided; and
+        2. the physical location where the service provider will provide the service.
+           Microsoft’s contractual documents comprehensively set out the scope of the outsourcing arrangement
+           and the respective commitments of the parties. Microsoft enters into agreements with each of its financial institution customers for Online Services, which includes a Financial Services Amendment, the Product 
+           Terms, the Data Protection Addendum, and the Service Level Agreement. The agreements clearly define the Online Services to be provided. The services are broadly described, along with the applicable usage rights,
+           in the Product Terms. The SLA contains Microsoft’s service level commitment, as well as the remedies for the customer in the event that Microsoft does not meet the commitment.
+           Microsoft contractually commits that Microsoft will store core categories of the customer’s data at rest in
+           Canada, if customer provisions its tenant in Canada. In the case of Office 365, if Customer provisions its tenant in Canada, Microsoft will store the following Customer Data at rest only within Canada: (1) Exchange Online
+           mailbox content (e-mail body, calendar entries, and the content of e-mail attachments), (2) SharePoint Online site content and the files stored within that site, and (3) files uploaded to OneDrive for Business. In the case
+           of Dynamics 365 Core Service, if Customer provisions a Dynamics 365 Core Service to be deployed within Canada, then, for that service, Microsoft will store Customer Data at rest within Canada, except as described in the Microsoft Dynamics 365 Trust Center.
+           In addition to this, Microsoft datacentre locations are made public on the Microsoft Trust Center.
+           Information about the locations of customer data at rest for Core Online Services is available in the Online Services Privacy and Security Terms, which provides commitments on the location at which Microsoft will store customer data at rest. Additional information pertaining to the data residency and transfer policies
+           specific to the Online Service is available at the Trust Center. This website lets you validate for each Online Service individually how data is stored and processed by Microsoft.
+
+           
+           REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+           
+    2. The outsourcing agreement should
+       establish performance measures that allow each party to determine
+       whether the commitments contained in the outsourcing contract are
+       being fulfilled.
+       All of these aspects are covered in the Product Terms and the SLA. The Product Terms contains the privacy and security practices, and internal controls that Microsoft implements, and the SLA sets outs Microsoft’s service level commitments for Online Services, as well as the service credit remedies for the customer if Microsoft does not meet the commitment. The SLA is fixed for the initial term of the Enrollment.
+       “We will not modify the terms of your SLA during the initial term of your subscription; however, if you renew your subscription, then the version of this SLA that is current at the time of renewal will apply for your
+       renewal term.”
+       For information regarding uptime for each Online Service, refer to the Service Level Agreement for Microsoft Online Services.
+       The customer may also terminate an Online Service at the express direction of a regulator with reasonable notice. Additionally, to ensure regulatory compliance, Microsoft and the Customer may contemplate adding
+       additional products or services, or if these are unable to satisfy the customer’s new regulatory requirements, the customer may terminate the applicable Online Service without cause by giving reasonable written notice of termination.
+       Pursuant to the Financial Services Amendment, in the event that the Regulator publishes new or updated
+       guidance that relates to the Online Services, upon your request, Microsoft will prepare a written response to such guidance including how (and the extent to which) the Online Services address the guidance through
+       either existing features or planned changes on the roadmap for the Online Services. If you require a change to any new or existing services feature or control, you may request such feature or control, and Microsoft will respond within a reasonable time, so that the parties can discuss if accommodating such request is feasible and, if so, how to accommodate your requirements.
+
+       
+       REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+       
+    3. The outsourcing agreement is expected to:
+        1. specify the type and frequency of information that the financial institution receives from the
+           service provider, including reports that allow the financial institution to assess whether the performance measures are being met and any
+           other information required for
+           the financial institution’s internal monitoring program required
+           by Section 7.3 of the OSFI B- 10 Guidelines; and
+        2. include procedures and
+           requirements for the service
+           provider to report events to the
+           financial institution that may have the potential to materially affect
+           the delivery of the service.
+           Microsoft will notify the customer if it becomes aware of any security incident, and will take reasonable steps to mitigate the effects and minimize the damage resulting from the security incident.
+           The Data Protection Addendum specifies the audit and monitoring mechanisms that Microsoft puts in place to verify that the Online Services meet appropriate security and compliance standards. Rigorous third-party audits validate the adherence of Microsoft’s Online Services to these strict requirements. Upon request,
+           Microsoft will provide each Microsoft audit report to a customer to verify Microsoft’s compliance with the security obligations under the Data Protection Addendum.
+           Microsoft makes available to customers penetration testing and other audits of its cybersecurity practices, and customers also may conduct their own penetration testing of the services. This is done in accordance with Microsoft’s rules of engagement, which do not require Microsoft’s permission in advance of such
+           testing. For more information regarding penetration testing, see https://technet.microsoft.com/en-us/ mt784683.aspx.
+           Customers may also participate in the optional Compliance Program for the Microsoft Cloud to obtain additional information concerning the Online Services, including the following: (a) access to Microsoft personnel for raising questions and escalations relating to Online Services, including for support in risk assessments, (b) invitation to participate in a webcast hosted by Microsoft to discuss audit results and
+           subsequent access to detailed information regarding planned remediation of any deficiencies identified by the audit, (c) access to Microsoft’s subject matter experts through group events such as webcasts or in-
+           person meetings (including an annual summit event) where roadmaps of planned developments or reports of significant events will be discussed and you will have a chance to provide structured feedback and/or
+           suggestions regarding the Compliance Program for the Microsoft Cloud and its desired future evolution.
+           The group events will also give you the opportunity to discuss common issues with other regulated financial institutions and raise them with Microsoft.
+           
+
+           
+           REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+           
+    4. The outsourcing contract is expected to incorporate a protocol for resolving disputes, and should specify:
+        1. whether the service provider must continue providing the service
+           during a dispute and any resolution period; and
+        2. the jurisdiction and rules under which the dispute will be settled.
+           Microsoft contractually agrees to provide the services for the duration of the contract and can commit to
+           continue delivering the services in the event of a good faith dispute between the parties. Generally speaking, as long as the customer complies with its obligations under the contract, Microsoft will continue to provide
+           the services. There are very limited situations where Microsoft may suspend/terminate the services. Microsoft will usually provide reasonable notice before suspending the services.
+           The Microsoft Business and Services Agreement (MBSA) (refer to the dispute resolution section) sets out the jurisdictions in which parties should bring their actions. Microsoft must bring actions against the customer in the countries where the customer’s contracting party is headquartered. The customer must bring actions against: (a) in Ireland if the action is against a Microsoft affiliate in Europe; (b) in the State of Washington, if the action is against a Microsoft affiliate outside of Europe; or (c) in the country where the Microsoft affiliate delivering the services has its headquarters if the action is to enforce a Statement of Services.
+           The MBSA (refer to the dispute resolution section) sets out the choice of law provision. Either the contract is governed by the laws of the State of Washington if the contract is with a Microsoft affiliate located outside of Europe; or the contract is governed by the laws of Ireland if the contract is with a European Microsoft affiliate.
+           
+
+           
+           REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+           
+    5. The outsourcing agreement is expected to:
+        1. specify what constitutes a default, identify remedies and allow for
+           opportunities to cure defaults or terminate the outsourcing contract;
+        2. specify notice periods required for termination; and contain provisions for the return of the financial
+           institution’s assets in a timely
+           fashion; including, in particular, the return of data and records relating to data processing outsourcing
+           arrangements in a format
+           that would allow the financial
+           institutions to sustain business operations without prohibitive expense.
+           The financial institution is expected to ensure that it can reasonably continue to process information and sustain
+           operations in the event that the
+           outsourcing contract is terminated or
+           the Service Provider is unable to provide the service.
+           Yes.
+           If there is a service level breach, we may be entitled to a service credit under the SLA.
+           Microsoft agreements are usually subject to terms of 12-36 months, which may be extended at the customer’s election. They also include rights to terminate early for cause and without cause.
+           Microsoft’s Financial Services Amendment provides for business continuity and exit provisions, including rights for the customer to obtain exit assistance at market rates from Microsoft Professional Services
+           organization. Customers should work with Microsoft to build such business continuity and exit plans.
+           Microsoft’s flexibility in offering hybrid solutions further facilitate transi-tion from cloud to on-premise
+           solutions more seamlessly. Microsoft provides resources for customers to address exit planning, including its exit planning guidelines for financial services institutions and exit planning white paper.
+           The customer owns, and retains the ability to access, its data that is stored on Microsoft cloud services at all times. Refer to the Trust Center for further information.
+           
+
+           
+           REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+           
+    6. The outsourcing contract should
+       not contain provisions that preclude the service from being continued in situations where OSFI takes control of the financial institution, or where the financial institution is in
+       liquidation.
+       There are no provisions in the contract with Microsoft that preclude the service from being continued in situations where OSFI takes control of the financial institution, or where the financial institution is in liquidation.
+       Generally speaking, as long the customer complies with its obligations under the contract, Microsoft will continue to provide the services. There are very limited situations where Microsoft may suspend/terminate the services (as set out in the Product Terms). Microsoft will usually provide reasonable notice before
+       suspending the services.
+       
+       
+    7. The outsourcing contract should:
+        1. Clearly identify and establish the ownership of all assets (including intellectual and physical) related
+           to the outsourcing agreement; and
+           c. State whether and how the service provider has the right to use
+           the FSI’s assets (including data, hardware and software system documentation and intellectual
+           property) and the right of service provider to access those assets.
+           Yes.
+           Ownership of documents, records and other data remain with the customer and at no point transfer to
+           Microsoft or anyone else, so this does not need to be addressed through transition. Being a cloud services solution, ownership of software and hardware used to provide the service remains with Microsoft.
+           The Financial Services Amendment provides for business continuity and exit provisions, including rights for the customer to obtain exit assistance at market rates from Microsoft Professional Services organization.
+           Customers should work with Microsoft to build such business continuity and exit plans. Microsoft’s flexibility in offering hybrid solutions further facilitate transition from cloud to on-premise solutions more seamlessly.
+           
+
+           
+           REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+           
+    8. The outsourcing contract should Outline the service provider’s
+       measures for ensuring the
+       Continuation of the outsourced business activity in the event of
+       problems and events that may affect the Service Provider’s operation,
+       including systems breakdown and
+       natural disaster and other reasonably foreseeable events.
+       The financial institutions should ensure that the service provider
+       regularly tests its business recovery system as it pertains to the
+       outsourced activity, notifies the
+       financial institution of the test results, and addresses any material
+       deficiencies. The financial institution is expected to provide a summary of the applicable test results to OSFI
+       upon reasonable notice. The financial institution should be notified by
+       the service provider in the event that the service provider makes significant changes to its business resumption contingency plans, or encounters
+       other circumstances that might have a serious impact on the service.
+       Business Continuity Management forms part of the scope of the accreditation that Microsoft retains in relation to the online services, and Microsoft commits to maintain a data security policy that complies with these accreditations. Business Continuity Management also forms part of the scope of Microsoft’s
+       industry standards compliance commitments and Microsoft’s annual third party compliance audit. Business Continuity Plans (BCPs) are documented and reviewed at least annually, and the BCPs provide roles and
+       responsibilities and detailed procedures for recovery and reconstitution of systems to a known state per defined Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).
+       Microsoft also maintains emergency and contingency plans for the facilities in which Microsoft information systems that process customer data are located. Microsoft’s redundant storage and its procedures for
+       recovering data are designed to attempt to reconstruct customer data in its original or last-replicated state from before the time it was lost or destroyed.
+       Customers may also participate in the optional Compliance Program for the Microsoft Cloud to obtain additional information concerning the Online Services, including the following: (a) access to Microsoft personnel for raising questions and escalations relating to Online Services, including for support in risk assessments, (b) invitation to participate in a webcast hosted by Microsoft to discuss audit results and
+       subsequent access to detailed information regarding planned remediation of any deficiencies identified by the audit, (c) access to Microsoft’s subject matter experts through group events such as webcasts or in-
+       person meetings (including an annual summit event) where roadmaps of planned developments or reports of significant events will be discussed and you will have a chance to provide structured feedback and/or
+       suggestions regarding the Compliance Program for the Microsoft Cloud and its desired future evolution.
+       The group events will also give you the opportunity to discuss common issues with other regulated financial institutions and raise them with Microsoft.
+       
+
+       
+       REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+       
+    9. The outsourcing contract is expected to clearly stipulate the audit
+requirements and rights of both
+the service provider and the financial institution, including giving the
+financial institution the right to evaluate the service provided or,
+alternatively to cause an independent auditor to evaluate, on its behalf, the service provided. This includes a
+review of the service provider’s
+internal control environment as it
+relates to the service being provided. (continued)
+The Data Protection Addendum specifies the audit and monitoring mechanisms that Microsoft puts in place to verify that the Online Services meet appropriate security and compliance standards. Rigorous third-party audits validate the adherence of Microsoft’s Online Services to these strict requirements. Upon request,
+Microsoft will provide each Microsoft audit report to a customer to verify Microsoft’s compliance with the security obligations under the Data Protection Addendum.
+Microsoft makes available to customers penetration testing and other audits of its cybersecurity practices, and customers also may conduct their own penetration testing of the services. This is done in accordance with Microsoft’s rules of engagement, which do not require Microsoft’s permission in advance of such
+testing. For more information regarding penetration testing, see https://technet.microsoft.com/en-us/ mt784683.aspx.
+Microsoft makes available certain tools through the Service Trust Platform to enable customers to conduct their own virtual audits of the Online Services. In addition, the Financial Services Amendment details the examination and audit rights that are granted to the customer and the regulator. The “Unrestricted Rights of Examination or Audit by Regulator” sets out a process which can culminate in the regulator’s examination of Microsoft’s premises.
+Microsoft will provide customer and customer auditors unrestricted rights of inspection and auditing related to the outsourcing arrangement(s) to enable customer to monitor the outsourcing arrangement and to
+ensure compliance with all applicable regulatory and contractual requirements. This includes providing full access to all relevant business premises (e.g., head offices and operation centers), including the full range
+of relevant devices, systems, networks, information and data used for providing the outsourced function,
+including related financial information, personnel and Microsoft’s external auditors. The scope of the audit allows customer to ensure that:
+
+Continued Next Page »
+
+
+REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+
+    1. The outsourcing contract is expected to clearly stipulate the audit
+       requirements and rights of both
+       the service provider and the financial institution, including giving the
+       financial institution the right to evaluate the service provided or,
+       alternatively to cause an independent auditor to evaluate, on its behalf, the service provided. This includes a
+       review of the service provider’s
+       internal control environment as it
+       relates to the service being provided.
+        1. The Online Services comply with the terms and conditions of the Product Terms, DPA and the FSA;
+        2. The Service Level Agreements are being met;
+        3. The integrity and confidentiality of customer data are protected in compliance with the terms and conditions in the DPA and the FSA; and
+        4. The Online Services provided to customer are secure.
+       
+
+       
+       REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+       
+    2. The outsourcing contract should give OSFI or its representative the right to:
+        1. exercise the contractual rights of the financial institution relating to audit;
+        2. accompany the financial institution (or its independent auditor) when it exercises its contractual audit rights;
+        3. access and make copies of any internal audit reports (and
+           associated working papers and
+           recommendations) prepared by or for the Service Provider in respect of the service being performed for the financial institution, subject to OSFI agreeing to sign appropriate confidentiality documentation in
+           form and content satisfactory to the Service Provider; and
+        4. access findings in the external
+           audit of the Service Provider (and associated working Papers and
+           recommendations) that address
+           the service being performed for the financial institution, subject to the consent of the Service Provider’s external auditor and OSFI agreeing to sign appropriate confidentiality documentation in form and content satisfactory to the Service Provider and the external auditor.
+           There are provisions in the contract that enable the regulator to carry out inspection or examination of Microsoft’s facilities, systems, processes and data relating to the services. As part of the Financial Services Amendment that Microsoft offers to regulated financial services institutions, Microsoft will, upon a
+           regulator’s request, provide the regulator a direct right to examine the relevant service, including the ability to conduct an on-premises examination; to meet with Microsoft personnel and Microsoft’s external auditors; and to access related information, records, reports and documents. Under the outsourcing agreement,
+           Microsoft commits that it will not disclose customer data to the regulator except as required by law or at the direction or consent of the customer.
+           
+
+           
+           REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+           
+    3. The outsourcing contract is expected to set forth rules and limitations on
+subcontracting by the service provider.
+(continued)
+Microsoft’s enterprise cloud services process various categories of data, including customer data and
+personal data. Where Microsoft hires a subcontractor to perform work that may require access to such data, they are considered a subprocessor.
+Subprocessors may access data only to deliver the functions in support of Online Services that Microsoft has hired them to provide and are prohibited from using data for any other purpose.
+The Microsoft Online Services Subprocessor List identifies subprocessors authorized to subprocess customer data or personal data in Microsoft Online Services. This list is applicable for the Microsoft Online Services
+referred to in the Product Terms for which Microsoft is a data processor. This list of subprocessors includes all subcontractors who may perform critical or important functions and, in fact, discloses a set of subcontractors that perform staff augmentation, which itself is neither critical nor important in the context of the provision of Online Services.
+For further information, refer to the Trust Center and the Subprocessor and Data Privacy White Paper.
+Microsoft gives customers notice of new subprocessors (by updating the Microsoft Online Services
+Subprocessor List and providing customers with a mechanism to obtain notice of that update) at least six
+months in advance of the subprocessor’s authorization to perform services that may involve secure access to customer data and at least thirty days in advance of potential access to personal data within Microsoft Online Services. This advance notice enables customers to investigate the subprocessor, perform a risk assessment,
+and ask questions of Microsoft about the subprocessing engagement. (See DPA, “Notice and Controls on use of Subprocessors”)
+To ensure subcontractor accountability, Microsoft requires all of its vendors that handle customer personal information to join the Microsoft Supplier Security and Privacy Assurance Program, which is an initiative
+designed to standardize and strengthen
+
+Continued Next Page »
+
+
+REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+
+(k) The outsourcing contract is expected to set forth rules and limitations on
+subcontracting by the service provider.
+the handling of customer personal information, and to bring vendor business processes and systems into
+compliance with those of Microsoft. For more information regarding Microsoft’s Supplier Security and Privacy Program, see microsoft.com/en-us/procurement/msp-requirements.aspx.
+Microsoft will enter into a written agreement with any subcontractor to which Microsoft transfers customer data that is no less protective than the data processing terms in the customer’s contracts with Microsoft.
+In addition, Microsoft’s ISO/IEC 27018 certification requires Microsoft to ensure that its subcontractors are subject to the same security controls as Microsoft.
+Microsoft’s ISO 27001 certification provides a layer of additional controls that impose stringent requirements on Microsoft’s subcontractors to comply fully with Microsoft’s privacy, security, and other commitments to
+its customers, including requirements for handling sensitive data, background checks, and non-disclosure agreements.
+
+
+(I) In particular, security and
+confidentiality standards should apply to subcontracting or
+outsourcing arrangements by the primary Service Provider. The audit
+and inspection rights of the financial institutions and OSFI should apply to all significant subcontracting
+arrangements of the Service Provider.
+Microsoft provides a website that lists subcontractors authorized to access customer data in the Online Services as well as the limited or ancillary services they provide. At least 6 months before authorizing any new subcontractor to access Customer Data, Microsoft will update the website and provide the customer
+with a mechanism to obtain notice of that update. If the customer does not approve of a new subcontractor, then the customer may terminate the affected Online Service without penalty by providing, before the end of the notice period, written notice of termination that includes an explanation of the grounds for non-
+approval. If the affected cloud computing service is part of a suite (or similar single purchase of services), then any termination will apply to the entire suite. After termination, Microsoft will remove payment
+obligations for the terminated Online Services from subsequent customer invoices.
+In this way the confidentiality of customer data is protected when Microsoft uses subcontractors because Microsoft commits that its subcontractors “may access and use Customer Data, Professional Services Data, or Personal Data only to deliver the services Microsoft has retained them to provide and is prohibited from using Customer Data, Professional Services Data, or Personal Data for any other purpose”.
+
+
+
+REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+
+    1. The outsourcing contract is expected to:
+        1. set out the financial institution’s requirements for confidentiality and security; and
+        2. ensure that the service provider can logically isolate the financial
+institution’s data, records and items in process from those of the service provider’s other clients at all times, including under adverse conditions (continued)
+The Data Protection Addendum states that Microsoft and the customer each commit to comply with all
+applicable privacy and data protection laws and regulations. The customer owns its data that is stored on Microsoft cloud services at all times. The customer also retains the ability to access its customer data at
+all times, and Microsoft will deal with customer data in accordance with the terms and conditions of the Enrollment and the Data Protection Addendum. Microsoft will retain customer data stored in the Online
+Service in a limited function account for 90 days after expiration or termination of customer’s subscription so that the customer may extract the data. No more than 180 days after expiration or termination of the customer’s use of an Online Service, Microsoft will disable the account and delete customer data from the account.
+Microsoft makes specific commitments with respect to safeguarding your data in the Data Protection Addendum. In summary, Microsoft commits that:
+    1. Your data will only be used to provide the products and services to you and for limited business
+       operations incident to provide the products and services to you (related details are set out in the Data Protection Addendum). When providing products and services, Microsoft will not use or otherwise
+       process your data for user profiling, advertising or similar commercial purposes, or market research aimed at creating new functionalities, services, or products or any other purpose, unless such use or processing
+       is in accordance with your documented instructions.
+    2. Microsoft will not disclose your data to law enforcement unless required by law. If law enforcement
+       contacts Microsoft with a demand for your data, Microsoft will attempt to redirect the law enforcement agency to request that data directly from you.
+    3. Microsoft has implemented and will maintain appropriate technical and organizational measures,
+       internal controls, and information security routines intended to protect your data against accidental,
+       unauthorized or unlawful access, disclosure, alteration, loss, or destruction. (Data Protection Addendum)
+       
+       Continued Next Page »
+
+       
+       REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+       
+        1. The outsourcing contract is expected to:
+            1. set out the financial institution’s requirements for confidentiality and security; and
+            2. ensure that the service provider can logically isolate the financial
+               institution’s data, records and items in process from those of the service provider’s other clients at all times, including under adverse conditions
+               For Core Online Services, technical support personnel are only permitted to have access to customer information when needed.
+               The Data Protection Addendum states the responsibilities of the contracting parties that ensure the
+               effectiveness of security policies. To the extent that a security incident results from Microsoft’s failure to comply with its contractual obligations, and subject to the applicable limitations of liability, Microsoft reimburses you for reasonable and third-party validated, out-of-pocket remediation costs you incurred
+               in connection with the security incident, including actual costs of court- or governmental body-imposed payments, fines or penalties for a Microsoft-caused security incident and additional, commercially-
+               reasonable, out-of-pocket expenses you incurred to manage or remedy the Microsoft-caused security incident. Applicable limitation of liability provisions can be found in the MBSA.
+               Microsoft further agrees to notify you if it becomes aware of any security incident, and to take reasonable steps to mitigate the effects and minimize the damage resulting from the security incident.
+               
+
+               
+               REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+               
+        2. The outsourcing contract should
+address which party has responsibility for protection mechanisms, the
+scope of information to be protected, the powers of each party to change
+security procedures and requirements, which party may be liable for any
+losses that might result from a
+security breach and notification requirements in the case of a
+security breach.
+The OSFI Guidelines recommend that, ideally, the security and
+confidentiality policies adopted by the service provider be
+commensurate with those of the financial institution and should
+meet a reasonable standard under the circumstances.
+(continued)
+Microsoft will comply with all privacy and data protection laws applicable to it in the provision of the Online Services. For information on how Microsoft handles your data in the cloud, refer to the Subprocessor and Data Privacy White Paper.
+The customer owns its data that is stored on Microsoft cloud services at all times. The customer also retains the ability to access its customer data at all times, and Microsoft will deal with customer data in accordance with the terms and conditions of the Enrollment and the Data Protection Addendum. Microsoft will retain customer data stored in the Online Service in a limited function account for 90 days after expiration or
+termination of customer’s subscription so that the customer may extract the data. No more than 180 days
+after expiration or termination of the customer’s use of an Online Service, Microsoft will disable the account and delete customer data from the account.
+Microsoft makes specific commitments with respect to safeguarding your data in the Data Protection Addendum. In summary, Microsoft commits that:
+    1. Your data will only be used to provide the products and services to you and for limited business
+       operations incident to provide the products and services to you (related details are set out in the Data Protection Addendum). When providing products and services, Microsoft will not use or otherwise
+       process your data for user profiling, advertising or similar commercial purposes, or market research aimed at creating new functionalities, services, or products or any other purpose, unless such use or processing
+       is in accordance with your documented instructions.
+    2. Microsoft will not disclose your data to law enforcement unless required by law. If law enforcement
+       contacts Microsoft with a demand for your data, Microsoft will attempt to redirect the law enforcement agency to request that data directly from you.
+    3. Microsoft has implemented and will maintain appropriate technical and organizational measures, internal controls, and information security routines intended to protect your data against accidental, unauthorized or unlawful access, disclosure, alteration, loss, or destruction.
+       
+       Continued Next Page »
+
+       
+       REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+       
+        1. The outsourcing contract should
+           address which party has responsibility for protection mechanisms, the
+           scope of information to be protected, the powers of each party to change
+           security procedures and requirements, which party may be liable for any
+           losses that might result from a
+           security breach and notification requirements in the case of a
+           security breach.
+           The OSFI Guidelines recommend that, ideally, the security and
+           confidentiality policies adopted by the service provider be
+           commensurate with those of the financial institution and should
+           meet a reasonable standard under the circumstances.
+           For Core Online Services, technical support personnel are only permitted to have access to customer information when needed.
+           Microsoft further agrees to notify you if it becomes aware of any security incident, and to take reasonable steps to mitigate the effects and minimize the damage resulting from the security incident.
+           
+           
+        2. The outsourcing contract should fully describe the basis for calculating fees and compensation relating to the
+           service being provided.
+           Yes.
+           Note that sales of Microsoft product to enterprise customers are made via a Microsoft reseller, who sets the end price with the customer. The basis for the pricing will therefore be set out in a separate agreement with Microsoft’s reseller.
+           Microsoft has a variety of flexible licensing models. It is worth noting that one of the key benefits of cloud services is that the customer gets to run the latest version of product, thereby overcoming the issue of
+           manual software upgrades and upgrade pricing.
+           Please refer to the arrangements with your Microsoft reseller for more information.
+           A service credit regime is included in our contract with Microsoft (see generally the SLA).
+           
+
+           
+           REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+           
+        3. The outsourcing contract should require the Service Provider to
+notify the financial institution about significant changes in its insurance coverage and disclose general terms and conditions of its insurance
+coverage.
+Microsoft maintains self-insurance arrangements for most of the areas where third party insurance is typically obtained. Copies of certificates of insurance are available upon request.
+
+
+B. DATA PRIVACY CONTRACTUAL REQUIREMENTS
+If the outsourcing agreement contemplates any transfer of personal information to the service provider, the following requirements may apply (see Section 1 of the Privacy Toolkit - A Guide for Businesses and Organizations, Office of the Privacy Commissioner of Canada.
+REQUIREMENT
+HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+
+
+
+    1. The service provider must name a
+       person to handle all privacy aspects of the outsourcing contract.
+       Microsoft has a dedicated and named privacy contact. Furthermore, Microsoft commits to comply with (and is audited against) ISO/IEC 27018. Under paragraph 6.1.1 of this international standard, Microsoft is required to designate a point of contact for use by its customers regarding the processing of personal information
+       under the contract.
+       
+       
+    2. The service provider must limit use of the personal information to
+       the purposes specified to fulfil the outsourcing contract.
+       Customer data will only be used to provide the products and services to customer and for limited business operations incident to provide the products and services to Customer (related details are set out in the Data Protection Addendum). When providing products and services, Microsoft will not use or otherwise process customer data for user profiling, advertising or similar commercial purposes, or market research aimed at
+       creating new functionalities, services, or products or any other purpose, unless such use or processing is in accordance with Customer’s documented instructions. In addition, under paragraph A.2.1 of ISO/IEC 27018 Microsoft is required to only use the personal information in accordance with customer instructions.
+       
+       
+    3. The service provider must limit
+       disclosure of the information to what is authorized by the financial
+       institution or required by law.
+       The Data Protection Addendum states that Microsoft and the customer each commit to comply with all applicable privacy and data protection laws and regulations.
+       As part of the Data Protection Addendum, Microsoft will not disclose or provide access to your data to law enforcement unless required by law. If law enforcement contacts Microsoft with a demand for your data, Microsoft will attempt to redirect the law enforcement agency to request that data directly from you.
+       In addition, under paragraph A.2.1 of ISO/IEC 27018 Microsoft is required to only use the personal
+       information in accordance with customer instructions which includes any disclosures of the personal
+       information and under A.5 of ISO/IEC 27018 Microsoft is required to reject any requests for disclosure of personal information that are not legally binding.
+       
+       
+       REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+       
+    4. The service provider must refer any people looking for access to their personal information to the FSI.
+       The Data Protection Addendum states that, upon receipt from a data subject of a request for access to their data, Microsoft will promptly notify you unless prohibited by law. Microsoft will reject the request unless required by law to comply. If the request is valid, Microsoft will attempt to redirect the data subject to
+       request the data directly from you.
+       In addition, under paragraph A.5 of ISO/IEC 27018 Microsoft is required to consult with the customer in relation to any legal requirement to disclose personal information where legally permissible.
+       
+       
+    5. The service provider must return or
+       dispose of the transferred information upon completion of the outsourcing contract.
+       Microsoft uses best practice procedures and a wiping solution that is NIST 800-88, ISO/IEC 27001, ISO/IEC 27018, SOC 1 and SOC 2 compliant. For hard drives that cannot be wiped it uses a destruction process that destroys it (i.e. shredding) and renders the recovery of information impossible (e.g., disintegrate, shred,
+       pulverize, or incinerate). The appropriate means of disposal is determined by the asset type. Records of the destruction are retained.
+       All Microsoft online services utilize approved media storage and disposal management services. Paper
+       documents are destroyed by approved means at the pre-determined end-of-life cycle. In its contracts with customers, Microsoft commits to disabling a customer’s account and deleting customer data from the
+       account no more than 180 days after the expiration or termination of the Online Service.
+       “Secure disposal or re-use of equipment and disposal of media” is covered under the ISO/IEC 27001 standards against which Microsoft is certified.
+       
+
+       
+       REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+       
+    6. The service provider must use
+       appropriate security measures to protect the personal information.
+       Microsoft has implemented and will maintain appropriate technical and organizational measures,
+       internal controls, and information security routines intended to protect customer data against accidental, unauthorized or unlawful access, disclosure, alteration, loss, or destruction.
+       For Core Online Services, technical support personnel are only permitted to have access to customer information when needed.
+       In addition, under paragraphs 8, 9, 10, 11, 12, 13 and A.10 of ISO/IEC 27018 Microsoft is required to take a
+       number of security measures to protect customer personal information. These measures cover access control, cryptography, physical and environmental security, operations security and communications security.
+       
+       
+    7. The service provider must allow
+the financial institution to audit the
+service provider’s compliance with the outsourcing contract as necessary.
+(continued)
+Microsoft provides access to “service health” dashboards (Office 365 Service Health Dashboard and Azure Status Dashboard) providing real-time and continuous updates on the status of Microsoft Online Services.
+This provides your IT administrators with information about the current availability of each service or tool (and history of availability status), details about service disruption or outage and scheduled maintenance times. The information is provided online and via an RSS feed. As part of its certification requirements,
+Microsoft is required to undergo independent third-party auditing, and it shares with the customer the
+independent third party audit reports. Microsoft also makes available a wealth of resources online to provide transparency and assurance to customers in the Microsoft compliance documentation dashboard.
+The Financial Services Amendment provides customers and their auditors with the unrestricted rights of
+inspection and auditing related to the outsourcing arrangement, which includes specific rights of access to business premises for financial services customers via special contractual provisions designed for regulated
+
+
+
+REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+
+(g) The service provider must allow
+the financial institution to audit the
+service provider’s compliance with the outsourcing contract as necessary.
+(continued)
+customers in the financial services sector. Additionally, Financial Services Amendment provides the
+customer’s regulator to examine or audit the Online Services in order to meet the regulator’s supervisory obligations of Microsoft as a direct service provider of the customer. These rights enable such customers to comply with their regulatory obligations through direct access to business premises, to information, Microsoft personnel and Microsoft’s external auditor.
+The rights of audit and additional customer benefits provided under the Financial Services Amendment
+include: (a) access to community events organized by Microsoft related to updates to the Online Services,
+Microsoft responses to regulator changes, and to provide additional feedback to Microsoft for further
+development of the Online Services, (b) submit a written request to meet with Microsoft’s external auditors,
+(c) receive from Microsoft written responses to updated regulator guidance, (d) receive responses from Microsoft about Microsoft responses and changes to services based on regulatory changes, (e) access to
+Microsoft personnel for raising questions and escalations relating to Online Services, including for support in risk assessments, (f ) receipt of communication from Microsoft on (1) the nature, common causes, and
+resolutions of security incidents and other circumstances that can reasonably be expected to have a material service impact on the customer’s use of Microsoft cloud services, (2) Microsoft’s risk-threat evaluations, and
+(3) significant changes to Microsoft’s business resumption and contingency plans or other circumstances that might have a serious impact on the customer’s use of Microsoft cloud services, and (g) access to a summary report of the results of Microsoft’s third party penetration testing against Microsoft cloud services (e.g.
+evidence of data isolation among tenants in the multi-tenanted services).
+
+
+
+REQUIREMENT HOW AND WHERE IS THIS DEALT WITH IN MICROSOFT’S CONTRACT?
+
+(g) The service provider must allow
+the financial institution to audit the
+service provider’s compliance with the outsourcing contract as necessary.
+Customers may also participate in the optional Compliance Program for the Microsoft Cloud or a successor program, as updated from time to time, to obtain additional information concerning the Online Services,
+including the following: (a) access to Microsoft personnel for raising questions and escalations relating to Online Services, including for support in risk assessments, (b) invitation to participate in a webcast hosted by Microsoft to discuss audit results and subsequent access to detailed information regarding planned
+remediation of any deficiencies identified by the audit, (c) access to Microsoft’s subject matter experts
+through group events such as webcasts or in-person meetings (including an annual summit event) where roadmaps of planned developments or reports of significant events will be discussed and you will have
+a chance to provide structured feedback and/or suggestions regarding the Compliance Program for the
+Microsoft Cloud (or the applicable successor program) and its desired future evolution. The group events will also give you the opportunity to discuss common issues with other regulated financial institutions and raise them with Microsoft.
+
+
+
+‌Further Information
+
+    • Navigating Your Way to the Cloud: microsoft.com/en-sg/apac/trustedcloud
+    • Compliance Documentation: https://docs.microsoft.com/en-us/compliance/
+    • Trust Center: microsoft.com/trust
+    • Service Trust Portal: aka.ms/trustportal
+    • Customer Stories: customers.microsoft.com
+    • Product Terms: Microsoft.com/contracts
+    • Service Level Agreements: microsoft.com/contracts
+    • SAFE Handbook: aka.ms/safehandbook
+    • A Cloud for Global Good | Microsoft: news.microsoft.com/cloudforgood/
+
+© Microsoft Corporation 2019. This document is not legal or regulatory advice and does not constitute any warranty or contractual commitment on the part of Microsoft. You should seek independent legal advice on your cloud services project and your legal and regulatory obligations.
+
+88 | Further Information Back to Contents
+
+
+
