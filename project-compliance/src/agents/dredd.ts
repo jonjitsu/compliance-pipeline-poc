@@ -121,11 +121,16 @@ export const dreddCharacter: Character = {
       'Include specific remediation steps',
     ],
   },
+  knowledge: [
+    { directory: 'knowledge/shared', shared: true },
+    { directory: 'knowledge/dredd', shared: false },
+  ]
 };
 
-const initDreddCharacter = ({ runtime }: { runtime: IAgentRuntime }) => {
+const initDreddCharacter = async ({ runtime }: { runtime: IAgentRuntime }) => {
   logger.info('Initializing character');
   logger.info('Name: ', dreddCharacter.name);
+
 };
 
 export const dreddAgent: ProjectAgent = {
