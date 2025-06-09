@@ -7,9 +7,10 @@ import {
 } from '@elizaos/core';
 import starterPlugin from './plugin.ts';
 import { elizaAgent } from './agents/eliza.ts';
+import { dreddAgent } from './agents/dredd.ts';
 
 const project: Project = {
-  agents: [elizaAgent],
+  agents: [elizaAgent, dreddAgent],
 };
 
 export default project;
