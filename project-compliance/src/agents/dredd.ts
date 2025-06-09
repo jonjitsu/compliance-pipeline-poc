@@ -21,6 +21,7 @@ export const dreddCharacter: Character = {
     ...(!process.env.IGNORE_BOOTSTRAP ? ['@elizaos/plugin-bootstrap'] : []),
   ],
   settings: {
+    ragKnowledge: true,
     secrets: {},
   },
   system:
