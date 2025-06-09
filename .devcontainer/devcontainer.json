@@ -1,0 +1,35 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+{
+  "name": "Compliance AI",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "node",
+  "features": {
+    // "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [
+    3000
+  ],
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/home/node/.gitconfig,type=bind,readonly"
+  ],
+  "postCreateCommand": {
+    "eliza": "cd project-compliance && elizaos start"
+  },
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next",
+        "rbbit.typescript-hero",
+        "GregorBiswanger.json2ts",
+        "yoavbls.pretty-ts-errors",
+        "pmneo.tsimporter",
+      ]
+    }
+  }
+}
