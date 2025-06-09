@@ -1,0 +1,2 @@
+# Overview
+This proof-of-concept leverages the ElizaOS agentic framework to automate enforcement of compliance standards across your codebase. It hooks into GitHub events (e.g. pull requests, commits, issue comments), invokes AI-driven checks against your organization’s policies, and surfaces actionable feedback directly on PRs or issues. By combining event-driven workflows with natural-language compliance profiles, it helps teams catch violations early, streamline remediation, and maintain an auditable trail of policy enforcement.
