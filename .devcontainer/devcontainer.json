@@ -17,7 +17,7 @@
     "source=${localEnv:HOME}/.gitconfig,target=/home/node/.gitconfig,type=bind,readonly"
   ],
   "postCreateCommand": {
-    "eliza": "cd project-compliance && elizaos start"
+    // "eliza": "cd project-compliance && elizaos dev"
   },
   // Configure tool-specific properties.
   "customizations": {
