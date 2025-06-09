@@ -2,7 +2,7 @@ import { describe, expect, it, vi, beforeAll, afterAll } from 'vitest';
 import * as fs from 'fs';
 import * as path from 'path';
 import { logger, IAgentRuntime, Plugin } from '@elizaos/core';
-import { character } from '../src/index';
+import { elizaCharacter } from '../src/agents/eliza';
 import plugin from '../src/plugin';
 import { createMockRuntime } from './test-utils';
 import * as os from 'os';
@@ -56,14 +56,14 @@ describe('Integration: Project Structure and Components', () => {
 describe('Integration: Character and Plugin', () => {
   it('should have character with required properties', () => {
     // Verify character has required properties
-    expect(character).toHaveProperty('name');
-    expect(character).toHaveProperty('plugins');
-    expect(character).toHaveProperty('bio');
-    expect(character).toHaveProperty('system');
-    expect(character).toHaveProperty('messageExamples');
+    expect(elizaCharacter).toHaveProperty('name');
+    expect(elizaCharacter).toHaveProperty('plugins');
+    expect(elizaCharacter).toHaveProperty('bio');
+    expect(elizaCharacter).toHaveProperty('system');
+    expect(elizaCharacter).toHaveProperty('messageExamples');
 
     // Verify plugins is an array
-    expect(Array.isArray(character.plugins)).toBe(true);
+    expect(Array.isArray(elizaCharacter.plugins)).toBe(true);
   });
 
   it('should configure plugin correctly', () => {
@@ -90,7 +90,7 @@ describe('Integration: Runtime Initialization', () => {
   it('should create a mock runtime with character and plugin', async () => {
     // Create a custom mock runtime for this test
     const customMockRuntime = {
-      character: { ...character },
+      character: { ...elizaCharacter },
       plugins: [],
       registerPlugin: vi.fn().mockImplementation((plugin: Plugin) => {
         // In a real runtime, registering the plugin would call its init method,

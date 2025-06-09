@@ -1,4 +1,4 @@
-import { character } from '../src/index.js';
+import { elizaCharacter } from '../src/agents/eliza';
 import { v4 as uuidv4 } from 'uuid';
 import plugin from '../src/plugin.js';
 
@@ -46,26 +46,26 @@ export class StarterTestSuite implements TestSuite {
       name: 'Character configuration test',
       fn: async (runtime: any) => {
         const requiredFields = ['name', 'bio', 'plugins', 'system', 'messageExamples'];
-        const missingFields = requiredFields.filter((field) => !(field in character));
+        const missingFields = requiredFields.filter((field) => !(field in elizaCharacter));
 
         if (missingFields.length > 0) {
           throw new Error(`Missing required fields: ${missingFields.join(', ')}`);
         }
 
         // Additional character property validations
-        if (character.name !== 'Eliza') {
-          throw new Error(`Expected character name to be 'Eliza', got '${character.name}'`);
+        if (elizaCharacter.name !== 'Eliza') {
+          throw new Error(`Expected character name to be 'Eliza', got '${elizaCharacter.name}'`);
         }
-        if (!Array.isArray(character.plugins)) {
+        if (!Array.isArray(elizaCharacter.plugins)) {
           throw new Error('Character plugins should be an array');
         }
-        if (!character.system) {
+        if (!elizaCharacter.system) {
           throw new Error('Character system prompt is required');
         }
-        if (!Array.isArray(character.bio)) {
+        if (!Array.isArray(elizaCharacter.bio)) {
           throw new Error('Character bio should be an array');
         }
-        if (!Array.isArray(character.messageExamples)) {
+        if (!Array.isArray(elizaCharacter.messageExamples)) {
           throw new Error('Character message examples should be an array');
         }
       },
