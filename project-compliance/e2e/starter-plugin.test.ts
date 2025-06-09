@@ -1,5 +1,6 @@
 import { character } from '../src/index.js';
 import { v4 as uuidv4 } from 'uuid';
+import plugin from '../src/plugin.js';
 
 // Define a minimal TestSuite interface that matches what's needed
 interface TestSuite {
@@ -74,12 +75,7 @@ export class StarterTestSuite implements TestSuite {
       fn: async (runtime: any) => {
         // Test plugin initialization with empty config
         try {
-          await runtime.registerPlugin({
-            name: 'starter',
-            description: 'A starter plugin for Eliza',
-            init: async () => {},
-            config: {},
-          });
+          await runtime.registerPlugin(plugin);
         } catch (error) {
           throw new Error(`Failed to register plugin: ${error.message}`);
         }
