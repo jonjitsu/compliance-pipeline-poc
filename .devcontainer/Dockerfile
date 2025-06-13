@@ -40,7 +40,7 @@ RUN set -ex \
     && apt-get update \
     && apt-get install -y git python3 make g++ \
     && ln -s /usr/bin/python3 /usr/bin/python \
-    && su ${USERNAME} -c "umask 0002 && npm install -g bun" \
+    && su ${USERNAME} -c "umask 0002 && npm install -g bun node-pre-gyp" \
     && su ${USERNAME} -c "umask 0002 && bun install -g @elizaos/cli" \
     && echo DONE
 

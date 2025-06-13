@@ -32,5 +32,11 @@
         "GitHub.vscode-github-actions"
       ]
     }
+  },
+  "containerEnv": {
+    "PGLITE_DATA_DIR": "/workspaces/compliance-pipeline-poc/.eliza/pglite",
+    "SQLITE_DATA_DIR": "/workspaces/compliance-pipeline-poc/.eliza/sqlite",
+    "MODELS_DIR": "/workspaces/compliance-pipeline-poc/.eliza/models",
+    "CACHE_DIR": "/workspaces/compliance-pipeline-poc/.eliza/cache"
   }
 }
